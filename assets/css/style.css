@@ -37,7 +37,7 @@ Table of content
 /*google-Fonts*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Rubik:300,300i,400,400i,500,500i,700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
 /*
 -------------------------------------------
    Default Style
@@ -96,6 +96,60 @@ p {
   margin: 60px 0;
 }
 
+.heade {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.heade video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.heade .container {
+  position: relative;
+  z-index: 2;
+}
+
+.heade .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  .heade {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  .heade video {
+    display: none;
+  }
+}
 
 /*
 -------------------------------------------
@@ -105,18 +159,21 @@ p {
 
 .olive {
   display: inline-block;
-  padding: 20px 25px !important;
+  padding: 10px 25px !important;
   margin: 0 5px;
-  border-radius: 50px;
-  color: #fff !important;
-  font-weight: 500 !important;
-  font-family: 'Rubik', sans-serif !important;
+  border-radius: 3px;
+  font-weight: 600 !important;
+  font-family: 'Tajawal',sans-serif !important;
   background-color: #61ce70;
 }
 
-.olive:hover::before {
-  visibility: hidden !important;
+.olive:hover{
+  color: #fff !important;
 }
+/* .olive:hover::before {
+  visibility: hidden !important;
+  color: #fff !important;
+} */
 
 .section-title h2 {
   font-size: 50px;
@@ -177,7 +234,7 @@ p {
   background: #FBF9FE;
   position: fixed;
   box-shadow: 0px 0px 10px rgb(99, 104, 142, 0.2);
-  z-index: 5;
+  z-index: 999;
   top: 0;
   padding: 10px 0;
 }
@@ -553,26 +610,27 @@ header {
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .main-menu ul li {
   display: inline-block;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
 
 .sticky .main-menu ul li {
   display: inline-block;
-  padding: 20px 0 0 0;
+  /* padding: 20px 0 0 0; */
 }
 
 .main-menu ul li a {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #63688e;
-  font-family: 'Rubik', sans-serif;
-  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1b1e;
+  padding: 10px;
+  line-height: 35px;
+  font-family: 'Tajawal',sans-serif !important;
   position: relative;
 }
 

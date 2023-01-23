@@ -43,23 +43,23 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-10">
-                        <div class="main-menu float-right">
-                            <nav>
-                                <ul>
+                    <div class="col-md-10 my-auto">
+                        <div class="main-menu">
+                            <!-- <nav> -->
+                                <ul class="d-flex justify-content-between align-items-center">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/whoweare.php">Who We Are</a></li>
-                                    <li><a href="/vision.php">Vision</a></li>
+                                    <!-- <li><a href="/vision.php">Vision</a></li> -->
                                     <li><a href="/team.php">Team</a></li>
                                     <li><a href="/services.php">Services</a></li>
                                     <li><a href="/contact.php">Contact Us</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="olive">Apply For</a>
+                                    <li><a href="#" class="olive">Apply for Funding</a></li>
+                                    <li><a href="#" class="olive">Become an LP</a></li>
+                                    <!-- <li class="dropdown">
+                                        <a href="#" >Apply For</a>
                                         <ul>
-                                            <li><a href="#">Funding</a></li>
-                                            <li><a href="#">Membership</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <!-- <li><a href="#" class="olive"> Apply For Membership</a></li>
                                     <li><a href="#" class="olive"> +880 1234 567</a></li> -->
 
@@ -77,7 +77,7 @@
                                     </li>
                                     <li><a href="#" data-scroll-nav="5">Contact</a></li> -->
                                 </ul>
-                            </nav>
+                            <!-- </nav> -->
                         </div>
                         <div id="mobile-menu"></div>
                     </div>
