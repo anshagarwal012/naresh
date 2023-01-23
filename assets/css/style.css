@@ -111,7 +111,7 @@ p {
   color: #fff !important;
   font-weight: 500 !important;
   font-family: 'Rubik', sans-serif !important;
-  background-color: #4f5d23;
+  background-color: #61ce70;
 }
 
 .olive:hover::before {
@@ -149,7 +149,7 @@ p {
 .scrollup {
   height: 50px;
   width: 50px;
-  background-color: #4f5d23;
+  background-color: #61ce70;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -200,7 +200,7 @@ textarea:focus,
 .contact-form input[type="tel"]:focus,
 .contact-form textarea:focus {
   background: rgba(255, 59, 51, 0.1);
-  border-color: #4f5d23;
+  border-color: #61ce70;
 }
 
 #mobile-menu {
@@ -315,7 +315,7 @@ a.slicknav_row:hover {
 .main-menu ul li a.active,
 .work-icon i.flaticon-test::before,
 .counter-project h1 {
-  color: #4f5d23;
+  color: #61ce70;
 }
 
 .viso-btn.read-more:hover,
@@ -336,7 +336,7 @@ input[type="submit"],
 .footer-social>ul>li>a:hover,
 ul.author-social li a:hover,
 .tags li a:hover {
-  background-color: #4f5d23;
+  background-color: #61ce70;
 }
 
 a,
@@ -394,7 +394,7 @@ input[type="submit"] {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #4f5d23;
+  border-top-color: #61ce70;
   -webkit-animation: spin 1.7s linear infinite;
   animation: spin 1.7s linear infinite;
   z-index: 11;
@@ -409,7 +409,7 @@ input[type="submit"] {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #4f5d23;
+  border-top-color: #61ce70;
   -webkit-animation: spin-reverse 0.6s linear infinite;
   animation: spin-reverse 0.6s linear infinite;
 }
@@ -424,7 +424,7 @@ input[type="submit"] {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #4f5d23;
+  border-top-color: #61ce70;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
 }
@@ -795,7 +795,7 @@ input[type="submit"]:hover {
 }
 
 .work-icon i.flaticon-test::before {
-  border: 1px solid #4f5d23;
+  border: 1px solid #61ce70;
   padding: 20px;
   font-size: 40px;
   border-radius: 10%;
