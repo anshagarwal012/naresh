@@ -2,19 +2,6 @@
 $heading = "Our Services";
 require('header.php');
 ?>
-<div class="breadcrumb-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Our Services</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li class="active"><a href="/services.php">Our Services</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="about-agency section-padding">
     <div class="container">
         <div class="row">

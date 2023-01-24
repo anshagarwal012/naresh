@@ -2,19 +2,6 @@
 $heading = "Contact Us";
 require('header.php');
 ?>
-<div class="breadcrumb-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Contact Us</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li class="active"><a href="/contact.php">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="contact-area section-padding">
     <div class="container">
         <div class="row">

@@ -96,10 +96,47 @@ p {
   margin: 60px 0;
 }
 
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+.heade-h2{
+  color: #E4E4E4;
+  font-size: 45px;
+  text-transform: capitalize;
+  line-height: 60px;
+}
+
+a.social-team {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 27px;
+  font-size: 12px;
+  margin-right: 7px;
+  border: 1px solid rgba(11, 11, 11, 0.2);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #1b1d21;
+}
+
 .heade {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -141,16 +178,6 @@ p {
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 
-@media (pointer: coarse) and (hover: none) {
-  .heade {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-
-  .heade video {
-    display: none;
-  }
-}
-
 /*
 -------------------------------------------
    Base Style
@@ -159,7 +186,7 @@ p {
 
 .olive {
   display: inline-block;
-  padding: 10px 25px !important;
+  padding: 2px 20px !important;
   margin: 0 5px;
   border-radius: 3px;
   font-weight: 600 !important;
@@ -909,8 +936,10 @@ input[type="submit"]:hover {
 }
 
 .discover-title p {
-  font-size: 16px;
+  font-size: 18px;
   padding: 15px 0;
+  font-family: 'Tajawal',sans-serif !important;
+  line-height: 35px;
 }
 
 .dicover-list li i {
@@ -1105,19 +1134,38 @@ input[type="submit"]:hover {
 .team-area {
   padding: 100px 0;
 }
-
+.heading-team{
+  color:#1b1d21;
+  font-size: 20px;
+  font-family: 'Tajawal',sans-serif !important;
+}
+.para-team{
+  color:#0cde70;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Tajawal',sans-serif !important;
+}
 .single-team {
   text-align: center;
   padding: 60px 0;
-  border: 2px solid rgba(255, 59, 51, 0.15);
-  border-radius: 1%;
+  /* border: 2px solid rgba(255, 59, 51, 0.15); */
+  border-radius: 3%;
   text-transform: capitalize;
   margin-top: 50px;
+  background-color: #ffffff7d;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
 }
 
 .single-team:hover {
   box-shadow: 0px 0px 20px rgba(255, 59, 51, 0.15);
   border-color: transparent;
+  transform: translateY(-8px);
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
 }
 
 .single-team h2 {

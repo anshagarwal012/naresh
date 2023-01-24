@@ -101,6 +101,7 @@
 <script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/typewriter.js"></script>
 </body>
 
 </html>

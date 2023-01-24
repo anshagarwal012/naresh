@@ -2,19 +2,6 @@
 $heading = "Our Team";
 require('header.php');
 ?>
-<div class="breadcrumb-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Our Team</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li class="active"><a href="/whoweare.php">Team</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="team-area">
     <div class="container">
         <div class="row">
@@ -31,28 +18,19 @@ require('header.php');
             <div class="col-md-4">
                 <div class="single-team">
                     <img src="assets/img/team1.png" alt="">
-                    <h2>Mohd Saif</h2>
-                    <p>Dummy Content</p>
-
-                    <div class="tem-social">
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/mohd-saif-60495021/ 
-	       saif@oliveventurepartners.in"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
+                    <h2 class="heading-team">Mohd Saif</h2>
+                    <p class="para-team">Founding Partner</p>
+                    <a class="social-team" href="https://www.linkedin.com/in/mohd-saif-60495021/ 
+	       saif@oliveventurepartners.in"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="single-team">
                     <img src="assets/img/team3.png" alt="">
-                    <h2>Naresh Kumar</h2>
-                    <p>Dummy Content</p>
-                    <div class="tem-social">
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/naresh-kumar-cwm%C2%AE-65446121/ 
-		  naresh@oliveventurepartners.in"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
+                    <h2 class="heading-team">Naresh Kumar</h2>
+                    <p class="para-team">Founding Partner</p>
+                    <a class="social-team" href="https://www.linkedin.com/in/naresh-kumar-cwm%C2%AE-65446121/ 
+		  naresh@oliveventurepartners.in"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="col-2"></div>
