@@ -2,12 +2,11 @@
 $heading = "Contact Us";
 require('header.php');
 ?>
-<div class="contact-area section-padding">
+<div class="contact-area">
+    <div class="image">
+        <img src="/assets/img/contact-banner.jpg" class="img-fluid" alt="Responsive image">
+    </div>
     <div class="container">
-        <div class="image">
-            <img src="/assets/img/header-vector.png" class="img-fluid" alt="Responsive image">
-
-        </div>
         <!-- <div class="row">
             <div class="col-md-8 offset-md-2">
                 
@@ -47,7 +46,7 @@ require('header.php');
                             <li>
                                 <div class="row py-3 my-1">
                                     <div class="col-md-2">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <i style="width: 60px;text-align: center;" class="fa fa-map-marker" aria-hidden="true"></i>
                                     </div>
                                     <div class="col">
                                         <div class="head">
@@ -60,7 +59,7 @@ require('header.php');
                             <li>
                                 <div class="row py-3 my-1">
                                     <div class="col-md-2">
-                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                        <i style="width: 60px;text-align: center;" class="fa fa-comment" aria-hidden="true"></i>
                                     </div>
                                     <div class="col">
                                         <div class="head">
