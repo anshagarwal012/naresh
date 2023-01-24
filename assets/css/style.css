@@ -48,6 +48,10 @@ Table of content
   font-family: 'Tajawal', sans-serif !important;
 }
 
+i {
+  font-family: 'FontAwesome' !important;
+}
+
 body {
   font-family: 'Tajawal', sans-serif !important;
   font-size: 14px;
