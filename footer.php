@@ -93,10 +93,10 @@
 <!-- Js File-->
 <script src="assets/js/jquery.v3.4.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script> -->
 <script src="assets/js/scrollIt.min.js"></script>
 <script src="assets/js/jquery.slicknav.min.js"></script>
-<script src="assets/js/map.js"></script>
+<!-- <script src="assets/js/map.js"></script> -->
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/plugins.js"></script>

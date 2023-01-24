@@ -37,15 +37,19 @@ Table of content
 /*google-Fonts*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Rubik:300,300i,400,400i,500,500i,700&display=swap');
+
 /* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
 /*
 -------------------------------------------
    Default Style
 -------------------------------------------
 */
+* {
+  font-family: 'Tajawal', sans-serif !important;
+}
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Tajawal', sans-serif !important;
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
@@ -106,12 +110,24 @@ p {
 }
 
 @keyframes blink {
-  0% {opacity: 1;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.heade-h2{
+
+.heade-h2 {
   color: #E4E4E4;
   font-size: 45px;
   text-transform: capitalize;
@@ -131,6 +147,69 @@ a.social-team {
   -moz-border-radius: 50%;
   border-radius: 50%;
   color: #1b1d21;
+}
+
+form.card {
+  padding: 50px;
+}
+
+.negative-mar {
+  margin-top: -10px;
+}
+
+.negative-mar i {
+  font-size: 36px;
+}
+
+.single-team1 {
+  position: relative;
+}
+
+.single-team1:hover .overlay {
+  opacity: 0.5;
+}
+
+.single-team img {
+  width: 90%;
+  padding-top: 20px;
+  display: block;
+  height: auto;
+  text-align: center;
+
+  /* border-radius: 10px; */
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 94%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.head h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #1b1d21;
+  font-size: 36px !important;
+  font-family: Taja;
+}
+
+.head span {
+  font-weight: 400 !important;
+  color: #0cde70 !important;
+}
+
+.para p {
+  font-size: 18px;
+  color: #5f5f5f;
 }
 
 .heade {
@@ -190,13 +269,14 @@ a.social-team {
   margin: 0 5px;
   border-radius: 3px;
   font-weight: 600 !important;
-  font-family: 'Tajawal',sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
   background-color: #61ce70;
 }
 
-.olive:hover{
+.olive:hover {
   color: #fff !important;
 }
+
 /* .olive:hover::before {
   visibility: hidden !important;
   color: #fff !important;
@@ -657,7 +737,7 @@ header {
   color: #1a1b1e;
   padding: 10px;
   line-height: 35px;
-  font-family: 'Tajawal',sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
   position: relative;
 }
 
@@ -938,7 +1018,7 @@ input[type="submit"]:hover {
 .discover-title p {
   font-size: 18px;
   padding: 15px 0;
-  font-family: 'Tajawal',sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
   line-height: 35px;
 }
 
@@ -1134,38 +1214,41 @@ input[type="submit"]:hover {
 .team-area {
   padding: 100px 0;
 }
-.heading-team{
-  color:#1b1d21;
+
+.heading-team {
+  color: #1b1d21;
   font-size: 20px;
-  font-family: 'Tajawal',sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
 }
-.para-team{
-  color:#0cde70;
+
+.para-team {
+  color: #0cde70;
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'Tajawal',sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
 }
+
 .single-team {
   text-align: center;
-  padding: 60px 0;
+  padding: 0 0 60px 0;
   /* border: 2px solid rgba(255, 59, 51, 0.15); */
   border-radius: 3%;
   text-transform: capitalize;
   margin-top: 50px;
   background-color: #ffffff7d;
-  -webkit-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
 }
 
 .single-team:hover {
   box-shadow: 0px 0px 20px rgba(255, 59, 51, 0.15);
   border-color: transparent;
   transform: translateY(-8px);
-  -webkit-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 25px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
 }
 
 .single-team h2 {
