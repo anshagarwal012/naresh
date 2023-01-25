@@ -31,7 +31,7 @@ async function deleteSentence(eleRef) {
 async function carousel(carouselList, eleRef) {
   var i = 0;
   await typeSentence(carouselList[0].text, eleRef);
-  $(eleRef).append('<br>');
+  $(eleRef).append('<br><br>');
   await waitForMs(5000);
   await typeSentence(carouselList[1].text, eleRef);
 }
