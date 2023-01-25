@@ -147,7 +147,7 @@ i {
 
 .section-title h2 {
   font-weight: 700;
-  color: #20247b;
+  /* color: #20247b; */
   font-size: 45px;
   margin: 0 0 15px;
   padding-left: 15px;
