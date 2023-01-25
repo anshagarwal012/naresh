@@ -7,7 +7,9 @@ require('header.php');
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="section-title text-center">
-                    <h2>Our Expert Team Member</h2>
+                    <div class="head p-2">
+                        <h3 class="pt-3">Our Expert <span>Team Member</span></h3>
+                    </div>
                     <p>We are a group of individuals with a passion for entrepreneurship.</p>
                 </div>
             </div>
@@ -28,7 +30,7 @@ require('header.php');
             </div>
             <div class="col-md-4">
                 <div class="single-team">
-                <div class="single-team1">
+                    <div class="single-team1">
                         <img class="mx-auto" src="assets/img/naresh.jpeg" alt="">
                         <div class="overlay mx-auto"></div>
                     </div>

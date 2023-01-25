@@ -17,7 +17,9 @@ require('header.php');
                 <div class="contact-form">
                     <form action="#" class="card">
                         <div class="head">
-                            <h3 class="text-center">Get In touch</h3>
+                            <div class="head p-2">
+                                <h3 class=" text-center">Get In<span> Touch</span></h3>
+                            </div>
                         </div> <input type="text" placeholder="Enter Your Name">
                         <input type="email" placeholder="Enter Your Email">
                         <input type="tel" placeholder="Enter Your Phone">
@@ -52,7 +54,7 @@ require('header.php');
                                         <div class="head">
                                             <h3 class="">Office</h3>
                                         </div>
-                                        <p>H9/5, Malviya Nagar, Delhi - 110016</p>
+                                        <p>H- 9/5, Malviya Nagar, South Delhi, India - 110016</p>
                                     </div>
                                 </div>
                             </li>
