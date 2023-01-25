@@ -1,5 +1,6 @@
 const carouselText = [
-  { text: "Our vision is to assist New Age technology startups in building the next future. Our goal is to create value for our clients, and we operate with principles of excellence and trust.", color: "red" }
+  { text: "Our vision is to assist New Age technology startups in building the next future.", color: "red" },
+  { text: "Our goal is to create value for our clients, and we operate with principles of excellence and trust.", color: "red" }
 ]
 $(document).ready(async function () {
   carousel(carouselText, ".heade-h2")
@@ -29,20 +30,11 @@ async function deleteSentence(eleRef) {
 
 async function carousel(carouselList, eleRef) {
   var i = 0;
-  await typeSentence(carouselList[i].text, eleRef);
-  while (true) {
-    // updateFontColor(eleRef, carouselList[i].color)
-    await waitForMs(1500);
-    // await deleteSentence(eleRef);
-    // await waitForMs(500);
-    i++
-    if (i >= carouselList.length) { i = 0; }
-  }
+  await typeSentence(carouselList[0].text, eleRef);
+  $(eleRef).append('<br>');
+  await waitForMs(5000);
+  await typeSentence(carouselList[1].text, eleRef);
 }
-
-//   function updateFontColor(eleRef, color) {
-//     $(eleRef).css('color', color);
-//   }
 
 function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))

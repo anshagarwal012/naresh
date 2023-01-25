@@ -237,6 +237,7 @@ p {
   font-size: 45px;
   text-transform: capitalize;
   line-height: 60px;
+  font-weight: 700;
 }
 
 a.social-team {
@@ -320,7 +321,7 @@ form.card {
 .heade {
   position: relative;
   background-color: black;
-  height: 100vh;
+  height: 110vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
