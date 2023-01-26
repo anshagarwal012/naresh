@@ -52,6 +52,23 @@ i {
   font-family: 'FontAwesome' !important;
 }
 
+.form-group .required:after {
+  content: "*";
+  color: red;
+}
+
+label {
+  color: #4d4d4d;
+  font-size: 18px;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
 .feature-box-1 {
   padding: 32px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
@@ -458,19 +475,6 @@ form.card {
 
 .sticky header {
   padding: 10px 0;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-textarea:focus,
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form input[type="tel"]:focus,
-.contact-form textarea:focus {
-  background: rgba(255, 59, 51, 0.1);
-  border-color: #61ce70;
 }
 
 #mobile-menu {

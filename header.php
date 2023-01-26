@@ -51,8 +51,8 @@
                                 <li><a href="/team.php">Team</a></li>
                                 <li><a href="/services.php">Services</a></li>
                                 <li><a href="/contact.php">Contact Us</a></li>
-                                <li><a href="#" class="olive">Apply for Funding</a></li>
-                                <li><a href="#" class="olive">Become an LP</a></li>
+                                <li><a href="/membership.php" class="olive">Apply for Funding</a></li>
+                                <li><a href="/lp.php" class="olive">Become an LP</a></li>
                             </ul>
                         </div>
                         <div id="mobile-menu"></div>
