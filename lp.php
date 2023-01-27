@@ -19,7 +19,7 @@ require('header.php');
             </div>
         </div>
         <div class="form w-50 mx-auto">
-            <form class="card">
+            <form class="card" style="background-color: #FFFDD0;">
                 <div class="form-group py-3">
                     <label class="required">Full Name</label>
                     <input type="text" required class="form-control" id="" placeholder="Full Name">
@@ -39,6 +39,61 @@ require('header.php');
                 <div class="form-group py-3">
                     <label class="required">State</label>
                     <input type="text" required class="form-control" id="" placeholder="State">
+                </div>
+                <div class="form-group py-3">
+                    <label class="required">Country</label>
+                    <select class="form-control" required>
+                        <option>Australia</option>
+                        <option>Austria</option>
+                        <option>Bahrain</option>
+                        <option>Belgium</option>
+                        <option>Brazil</option>
+                        <option>Canada</option>
+                        <option>China</option>
+                        <option>Cyprus</option>
+                        <option>Czech Republic</option>
+                        <option>Denmark</option>
+                        <option>Estonia</option>
+                        <option>Finland</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>Greece</option>
+                        <option>Hong Kong SAR</option>
+                        <option>Hungary</option>
+                        <option>Iceland</option>
+                        <option>India</option>
+                        <option>Indonesia</option>
+                        <option>Ireland</option>
+                        <option>Israel</option>
+                        <option>Italy</option>
+                        <option>Japan</option>
+                        <option>Kuwait</option>
+                        <option>Latvia</option>
+                        <option>Luxembourg</option>
+                        <option>Malta</option>
+                        <option>Mexico</option>
+                        <option>Netherlands</option>
+                        <option>New Zealand</option>
+                        <option>Norway</option>
+                        <option>Poland</option>
+                        <option>Portugal</option>
+                        <option>Qatar</option>
+                        <option>Russia</option>
+                        <option>Saudi Arabia</option>
+                        <option>Singapore</option>
+                        <option>South Korea</option>
+                        <option>Spain</option>
+                        <option>Sweden</option>
+                        <option>Switzerland</option>
+                        <option>Taiwan</option>
+                        <option>Taiwan Province of China</option>
+                        <option>Thailand</option>
+                        <option>Turkey</option>
+                        <option>United Arab Emirates</option>
+                        <option>United Kingdom</option>
+                        <option>United States</option>
+                        <option>Other</option>
+                    </select>
                 </div>
                 <div class="form-group py-3">
                     <label class="">Linkedin Url</label>
@@ -79,19 +134,19 @@ require('header.php');
                             <input type="radio" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
-                            <p> Individual with a net worth (either individually or with my spouse, if any), and all property and other assets excluding my primary residence, that exceeds $1,000,000 including investments. </p>
+                            <p> Individual with a net worth (either individually or with my spouse, if any), and all property and other assets excluding my primary residence, that exceeds $500,000 including investments. </p>
                         </div>
                         <div class="col-md-1 text-right p-0">
                             <input type="radio" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
-                            <p> Individual with an annual income that was at least $200,000 in each of the two most recent years, and I expect such income in the current year.</p>
+                            <p> Individual with an annual income that was at least $50,000 in each of the two most recent years, and I expect such income in the current year.</p>
                         </div>
                         <div class="col-md-1 text-right p-0">
                             <input type="radio" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
-                            <p>Individual with an annual income, jointly with my spouse, of at least $300,000 in each of the two most recent years, and I expect such income in the current year.</p>
+                            <p>Individual with an annual income, jointly with my spouse, of at least $75,000 in each of the two most recent years, and I expect such income in the current year.</p>
                         </div>
                         <div class="col-md-1 text-right p-0">
                             <input type="radio" required name="radio" id="">
@@ -108,13 +163,13 @@ require('header.php');
                     </div>
                 </div>
                 <div class="form-group py-3">
-                    <label class="required text-bold">Declearation:</label>
+                    <label class="required text-bold">Declaration:</label>
                     <div class="row">
                         <div class="col-md-1 text-right p-0">
                             <input type="checkbox" name="radio" id="" required>
                         </div>
                         <div class="col-md-11">
-                            <p>I agree that all the above information is correct, and that Alamo Angels may use the above information to contact me using the above information regarding my application as well news, alerts and other promotional materials</p>
+                            <p>I agree that all the above information is correct, and that <b>Olive Venture Partners</b> may use the above information to contact me using the above information regarding my application as well news, alerts and other promotional materials</p>
                         </div>
                     </div>
                 </div>
