@@ -19,7 +19,7 @@ require('header.php');
             </div>
         </div>
         <div class="form w-50 mx-auto">
-            <form class="card" style="background-color: #FFFDD0;">
+            <form class="card" style="background-color: #fffef2;">
                 <div class="form-group py-3">
                     <label class="required">Full Name</label>
                     <input type="text" required class="form-control" id="" placeholder="Full Name">

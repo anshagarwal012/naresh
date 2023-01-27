@@ -230,11 +230,30 @@ p {
 .services .value-title {
   color: #0cde70;
   font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .services .value-text {
   color: #1b1d21;
   font-size: 12px;
+  text-transform: initial;
+}
+
+.services .value-image {
+  color: #1b1d21;
+  width: 100px;
+  margin: auto;
+  padding-bottom: 20px
+}
+
+.services .value {
+  border-bottom: 10px solid #0cde70;
+  min-height: 410px;
+}
+
+.services .value:hover {
+  border-bottom: 10px solid #0cde70;
 }
 
 .m-t {

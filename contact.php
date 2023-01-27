@@ -68,8 +68,8 @@ require('header.php');
                                             <h3 class="">Contact</h3>
                                         </div>
                                         <p>Email - <a href="mailto:info@oliveventurepartners.in">info@oliveventurepartners.in</a><br>
-                                            Phone - <a href="tel://+919582993610">+91 958 299 3610</a>&nbsp;
-                                            <a href="tel://+919911480079">+91 991 148 0079</a>
+                                            Phone - <a href="tel://+919582993610">+91 958 299 3610</a><br>
+                                            &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<a href="tel://+919911480079">+91 991 148 0079</a>
                                         </p>
                                     </div>
                                 </div>
