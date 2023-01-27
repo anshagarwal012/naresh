@@ -1910,11 +1910,11 @@ footer {
 .copyright-text {
   text-align: right;
   line-height: 40px;
-  font-size: 12px;
 }
 
 .copyright-text>p {
   margin: 0;
+  font-size: 12px;
 }
 
 
