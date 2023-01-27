@@ -38,12 +38,12 @@ require('header.php');
                     <div class="value single-team my-auto p-4">
                         <img src="/assets/svg/ancillary.svg" alt="" class="value-image">
                         <h4 class="text-center value-title">
-                            Ancillary Services Support </h4>
+                            Ancillary Support Services</h4>
                             <hr class="w-25">
                         <p class="text-center value-text">
-                            i. Fund raise Documents - Deck and Financial Model<br>
-                            ii. Business Structuring & Advisory services<br>
-                            iii. Accounting & Secretarial services.</p>
+                             Fund raise Documents - Deck and Financial Model<br>
+                             Business Structuring & Advisory services<br>
+                             Accounting & Secretarial services.</p>
                     </div>
                 </div>
             </div>
