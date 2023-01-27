@@ -6,10 +6,10 @@ require('header.php');
     <section class="section services-section" id="services">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-lg-6">
-                    <div class="head p-2">
+                <div class="">
+                    <div class="head section-title p-2">
                         <h3 class="pt-3">Our <span>Services</span></h3>
-                        <p>In addition to providing access to funding, we also offer other support services for startups, including</p>
+                        <p>In addition to providing access to funding, we also offer other support services for startups, including -</p>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@ require('header.php');
                         <img src="/assets/svg/fundraising.svg" alt="" class="value-image mb-3">
                         <h4 class="text-center value-title">
                             Fundraising Support</h4>
-                            <hr>
+                            <hr class="w-25">
                         <p class="text-center value-text">
                             Our fundraising support services aid startups in securing funding for their pre-seed and seed rounds. </p>
                     </div>
@@ -29,7 +29,7 @@ require('header.php');
                         <img src="/assets/svg/acceleration.svg" alt="" class="value-image">
                         <h4 class="text-center value-title">
                             Acceleration Support </h4>
-                            <hr>
+                            <hr class="w-25">
                         <p class="text-center value-text">
                             Our acceleration program supports early-stage companies by offering guidance and assistance to help them grow and succeed. </p>
                     </div>
@@ -39,7 +39,7 @@ require('header.php');
                         <img src="/assets/svg/ancillary.svg" alt="" class="value-image">
                         <h4 class="text-center value-title">
                             Ancillary Services Support </h4>
-                            <hr>
+                            <hr class="w-25">
                         <p class="text-center value-text">
                             i. Fund raise Documents - Deck and Financial Model<br>
                             ii. Business Structuring & Advisory services<br>
