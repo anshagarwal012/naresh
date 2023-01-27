@@ -218,6 +218,25 @@ p {
   padding: 60px 0;
 }
 
+.services .icon i:before {
+  font-size: 50px;
+  /* margin: 20px 0 !important; */
+}
+
+.services .icon i {
+  margin: 20px 0;
+}
+
+.services .value-title {
+  color: #0cde70;
+  font-size: 20px;
+}
+
+.services .value-text {
+  color: #1b1d21;
+  font-size: 12px;
+}
+
 .m-t {
   margin: 60px 0;
 }

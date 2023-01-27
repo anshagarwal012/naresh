@@ -7,13 +7,12 @@ require('header.php');
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-title">
-                        <h2>Our Services</h2>
+                    <div class="head p-2">
+                        <h3 class="pt-3">Our <span>Services</span></h3>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- feaure box -->
+            <!-- <div class="row">
                 <div class="col-sm-6 col-lg-6">
                     <div class="feature-box-1">
                         <div class="icon">
@@ -25,8 +24,6 @@ require('header.php');
                         </div>
                     </div>
                 </div>
-                <!-- / -->
-                <!-- feaure box -->
                 <div class="col-sm-6 col-lg-6">
                     <div class="feature-box-1">
                         <div class="icon">
@@ -38,8 +35,6 @@ require('header.php');
                         </div>
                     </div>
                 </div>
-                <!-- / -->
-                <!-- feaure box -->
                 <div class="col-sm-12 col-lg-12">
                     <div class="feature-box-1">
                         <div class="icon">
@@ -53,7 +48,46 @@ require('header.php');
                         </div>
                     </div>
                 </div>
-                <!-- / -->
+            </div> -->
+            <div class="row services justify-content-around mt-4">
+                <div class="col-sm-6 col-xl-4 my-auto p-3">
+                    <div class="value single-team my-auto p-4">
+                        <div class="icon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <!-- <img src="https://ahventures.fund/wp-content/uploads/2019/08/1522827.png" alt="" class="value-image"> -->
+                        <h4 class="text-center value-title">
+                            Fundraising Support</h4>
+                        <p class="text-center value-text">
+                            Our fundraising support services aid startups in securing funding for their pre-seed and seed rounds. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 my-auto p-3">
+                    <div class="value single-team my-auto p-4">
+                        <div class="icon">
+                            <i class="fa fa-tachometer"></i>
+                        </div>
+                        <!-- <img src="https://ahventures.fund/wp-content/uploads/2019/08/1522827.png" alt="" class="value-image"> -->
+                        <h4 class="text-center value-title">
+                            Acceleration Support </h4>
+                        <p class="text-center value-text">
+                            Our acceleration program supports early-stage companies by offering guidance and assistance to help them grow and succeed. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 my-auto p-3">
+                    <div class="value single-team my-auto p-4">
+                        <div class="icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <!-- <img src="https://ahventures.fund/wp-content/uploads/2019/08/1522827.png" alt="" class="value-image"> -->
+                        <h4 class="text-center value-title">
+                            Ancillary Services Support </h4>
+                        <p class="text-center value-text">
+                            i. Fund raise Documents - Deck and Financial Model<br>
+                            ii. Business Structuring & Advisory services<br>
+                            iii. Accounting & Secretarial services.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
