@@ -1,7 +1,8 @@
 const carouselText = [
   { text: "Our vision is to assist New Age technology startups", color: "red" },
   { text: "in building the next future.", color: "red" },
-  { text: "Our goal is to create value for our clients, and we operate with principles of excellence and trust.", color: "red" }
+  { text: "Our goal is to create value for our clients, and we", color: "red" },
+  { text: "operate with principles of excellence and trust.", color: "red" }
 ]
 $(document).ready(async function () {
   carousel(carouselText, ".heade-h2")
@@ -37,6 +38,9 @@ async function carousel(carouselList, eleRef) {
   $(eleRef).append('<br><br>');
   await waitForMs(5000);
   await typeSentence(carouselList[2].text, eleRef);
+  $(eleRef).append('<br>');
+  await typeSentence(carouselList[3].text, eleRef);
+
 }
 
 function waitForMs(ms) {
