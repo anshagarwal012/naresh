@@ -1,5 +1,6 @@
 const carouselText = [
-  { text: "Our vision is to assist New Age technology startups \n in building the next future.", color: "red" },
+  { text: "Our vision is to assist New Age technology startups", color: "red" },
+  { text: "in building the next future.", color: "red" },
   { text: "Our goal is to create value for our clients, and we operate with principles of excellence and trust.", color: "red" }
 ]
 $(document).ready(async function () {
@@ -31,9 +32,11 @@ async function deleteSentence(eleRef) {
 async function carousel(carouselList, eleRef) {
   var i = 0;
   await typeSentence(carouselList[0].text, eleRef);
+  $(eleRef).append('<br>');
+  await typeSentence(carouselList[1].text, eleRef);
   $(eleRef).append('<br><br>');
   await waitForMs(5000);
-  await typeSentence(carouselList[1].text, eleRef);
+  await typeSentence(carouselList[2].text, eleRef);
 }
 
 function waitForMs(ms) {
