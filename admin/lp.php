@@ -26,6 +26,9 @@ require('header.php');
                                         #
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Date Time
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
                                         Full Name
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
@@ -75,6 +78,9 @@ require('header.php');
                                             <tr>
                                                 <td class="whitespace-nowrap px-4 py-3 sm:px-5">
                                                     <?= $s ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['datetime'] ?>
                                                 </td>
                                                 <td class="whitespace-nowrap px-4 py-3 sm:px-5">
                                                     <?= $row['name'] ?>

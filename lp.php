@@ -16,8 +16,8 @@ if (isset($_POST) && !empty($_POST)) {
     $radio = $_POST['radio'];
     $declaration = $_POST['declaration'];
 
-    $sql = 'INSERT INTO lp (`name`, `email`, `phone`, `city`, `state`, `country`, `linkedin_url`, `company_name`, `referral`, `active_investor`, `invest_as`, `radio`, `declaration`)
-    VALUES ("' . $name . '", "' . $email . '", "' . $phone . '", "' . $city . '", "' . $state . '", "' . $country . '", "' . $linkedin_url . '", "' . $company_name . '", "' . $referral . '", "' . $active_investor . '", "' . $invest_as . '", "' . $radio . '", "' . $declaration . '")';
+    $sql = 'INSERT INTO lp (`datetime`,`name`, `email`, `phone`, `city`, `state`, `country`, `linkedin_url`, `company_name`, `referral`, `active_investor`, `invest_as`, `radio`, `declaration`)
+    VALUES ("' . date("d-m-y h:i:s") . '","' . $name . '", "' . $email . '", "' . $phone . '", "' . $city . '", "' . $state . '", "' . $country . '", "' . $linkedin_url . '", "' . $company_name . '", "' . $referral . '", "' . $active_investor . '", "' . $invest_as . '", "' . $radio . '", "' . $declaration . '")';
     if (mysqli_query($conn, $sql) === True) {
         echo '<script>alert("Data Submitted Successfully");</script>';
     } else {

@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Kolkata');
 $servername = "151.106.117.102";
 $username = "u338280037_naresh";
 $password = "Naresh@123";
@@ -7,16 +8,16 @@ $database = "u338280037_naresh";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-$sql1 = "CREATE TABLE IF NOT EXISTS `contacts` (
+$sql = "CREATE TABLE IF NOT EXISTS `contacts` (
 	`id` INT(50) NOT NULL AUTO_INCREMENT,
+	`datetime` VARCHAR(50),
 	`name` VARCHAR(255),
 	`email` VARCHAR(255),
 	`phone` VARCHAR(255),
 	`message` LONGTEXT,
 	PRIMARY KEY (`id`)
 )";
-mysqli_query($conn, $sql1);
-
+mysqli_query($conn, $sql);
 // $sql1 = "CREATE TABLE IF NOT EXISTS `membership` (
 // 	`id` INT(50) NOT NULL AUTO_INCREMENT,
 // 	`name` VARCHAR(255),
@@ -29,6 +30,7 @@ mysqli_query($conn, $sql1);
 
 $sql1 = "CREATE TABLE IF NOT EXISTS `lp` (
 	`id` INT(50) NOT NULL AUTO_INCREMENT,
+	`datetime` VARCHAR(50),
 	`name` VARCHAR(255),
 	`email` VARCHAR(255),
 	`phone` VARCHAR(255),

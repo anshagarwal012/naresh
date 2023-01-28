@@ -92,7 +92,7 @@ require('db.php');
                             </li>
                             <li>
                                 <a x-data="navLink" href="lp.php" :class="isActive ? 'font-medium text-primary dark:text-accent-light' : 'text-slate-600 hover:text-slate-900 dark:text-navy-200 dark:hover:text-navy-50'" class="flex py-2 text-xs+ tracking-wide outline-none transition-colors duration-300 ease-in-out">
-                                    Become am LP
+                                    Become an LP
                                 </a>
                             </li>
                             <li>

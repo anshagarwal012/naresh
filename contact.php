@@ -7,8 +7,8 @@ if (isset($_POST) && !empty($_POST)) {
     $phone = $_POST['phone'];
     $message = $_POST['message'];
 
-    $sql = 'INSERT INTO contacts (`name`, `email`, `phone`, `message`)
-    VALUES ("' . $name . '", "' . $email . '", "' . $phone . '", "' . $message . '")';
+    $sql = 'INSERT INTO contacts (`datetime`,`name`, `email`, `phone`, `message`)
+    VALUES ("' . date("d-m-y h:i:s") . '","' . $name . '", "' . $email . '", "' . $phone . '", "' . $message . '")';
     if (mysqli_query($conn, $sql) === True) {
         echo '<script>alert("Data Submitted Successfully");</script>';
     } else {
