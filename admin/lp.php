@@ -68,7 +68,7 @@ require('header.php');
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "SELECT * FROM lp";
+                                $sql = "SELECT * FROM lp order by id desc";
                                 $result = mysqli_query($conn, $sql);
                                 if ($result) {
                                     $s = 1;

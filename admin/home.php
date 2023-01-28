@@ -26,71 +26,112 @@ require('header.php');
                                         #
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Name
+                                        Date Time
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Job
+                                        Startup Name
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Favorite Color
+                                        Founder Name
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Email address
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Phone Number
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Position
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Startup Description
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Industry
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Website
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Country
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Startup Stage
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Funding Stage
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Pitch Deck
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Supporting Documents
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 1
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Cy Ganderton
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Quality Control Specialist
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Blue
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 2
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Hart Hagerty
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Desktop Support Technician
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Purple
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 3
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Brice Swyre
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Tax Accountant
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">Red</td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 4
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Marjy Ferencz
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Office Assistant I
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Crimson
-                                    </td>
-                                </tr>
+                                <?php
+                                $sql = "SELECT * FROM funding order by id desc";
+                                $result = mysqli_query($conn, $sql);
+                                $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+                                if ($result) {
+                                    $s = 1;
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                            <tr>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $s ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['datetime'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['sname'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['fname'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['email'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['phone'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['position'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['startupdesc'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['industry'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['website'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['country'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['stage'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['funding'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <a class="btn bg-primary text-white" href="<?= $protocol . $_SERVER['HTTP_HOST'] . '/' . $row['pitch_desk'] ?>" download="">Download</a>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <a class="btn bg-primary text-white" href="<?= $protocol . $_SERVER['HTTP_HOST'] . '/' . $row['sdocuments'] ?>" download="">Download</a>
+                                                </td>
+                                            </tr>
+                                <?php
+                                            $s++;
+                                        }
+                                    }
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>

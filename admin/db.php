@@ -18,17 +18,8 @@ $sql = "CREATE TABLE IF NOT EXISTS `contacts` (
 	PRIMARY KEY (`id`)
 )";
 mysqli_query($conn, $sql);
-// $sql1 = "CREATE TABLE IF NOT EXISTS `membership` (
-// 	`id` INT(50) NOT NULL AUTO_INCREMENT,
-// 	`name` VARCHAR(255),
-// 	`email` VARCHAR(255),
-// 	`phone` VARCHAR(255),
-// 	`message` LONGTEXT,
-// 	PRIMARY KEY (`id`)
-// )";
-// mysqli_query($conn, $sql1);
 
-$sql1 = "CREATE TABLE IF NOT EXISTS `lp` (
+$sql = "CREATE TABLE IF NOT EXISTS `lp` (
 	`id` INT(50) NOT NULL AUTO_INCREMENT,
 	`datetime` VARCHAR(50),
 	`name` VARCHAR(255),
@@ -46,4 +37,24 @@ $sql1 = "CREATE TABLE IF NOT EXISTS `lp` (
 	`declaration` VARCHAR(255),
 	PRIMARY KEY (`id`)
 )";
-mysqli_query($conn, $sql1);
+mysqli_query($conn, $sql);
+
+$sql = "CREATE TABLE IF NOT EXISTS `funding` (
+	`id` INT(50) NOT NULL AUTO_INCREMENT,
+	`datetime` VARCHAR(50),
+	`sname` VARCHAR(255),
+	`fname` VARCHAR(255),
+	`email` VARCHAR(255),
+	`phone` VARCHAR(255),
+	`position` VARCHAR(255),
+	`startupdesc` VARCHAR(255),
+	`industry` VARCHAR(255),
+	`website` VARCHAR(255),
+	`country` VARCHAR(255),
+	`stage` VARCHAR(255),
+	`funding` VARCHAR(255),
+	`pitch_desk` VARCHAR(255),
+	`sdocuments` VARCHAR(255),
+	PRIMARY KEY (`id`)
+)";
+mysqli_query($conn, $sql);

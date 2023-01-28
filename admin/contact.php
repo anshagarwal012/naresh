@@ -44,7 +44,7 @@ require('header.php');
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "SELECT * FROM contacts";
+                                $sql = "SELECT * FROM contacts order by id desc";
                                 $result = mysqli_query($conn, $sql);
                                 if ($result) {
                                     $s = 1;
