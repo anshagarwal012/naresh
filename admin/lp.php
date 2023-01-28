@@ -26,71 +26,99 @@ require('header.php');
                                         #
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Name
+                                        Full Name
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Job
+                                        Email address
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Favorite Color
+                                        Phone Number
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        City
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        State
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Country
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Linkedin Url
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Company Name
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Referral (if any)
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        active investor
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        invest as
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Select one
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 1
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Cy Ganderton
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Quality Control Specialist
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Blue
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 2
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Hart Hagerty
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Desktop Support Technician
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Purple
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 3
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Brice Swyre
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Tax Accountant
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">Red</td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 4
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Marjy Ferencz
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Office Assistant I
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Crimson
-                                    </td>
-                                </tr>
+                                <?php
+                                $sql = "SELECT * FROM lp";
+                                $result = mysqli_query($conn, $sql);
+                                if ($result) {
+                                    $s = 1;
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                            <tr>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $s ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['name'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['email'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['phone'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['city'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['state'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['country'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['linkedin_url'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['company_name'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['referral'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['active_investor'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['invest_as'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['radio'] ?>
+                                                </td>
+                                            </tr>
+                                <?php
+                                            $s++;
+                                        }
+                                    }
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>

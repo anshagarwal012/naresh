@@ -1,33 +1,43 @@
 <?php
 $heading = "Contact Us";
 require('header.php');
+if (isset($_POST) && !empty($_POST)) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+
+    $sql = 'INSERT INTO contacts (`name`, `email`, `phone`, `message`)
+    VALUES ("' . $name . '", "' . $email . '", "' . $phone . '", "' . $message . '")';
+    if (mysqli_query($conn, $sql) === True) {
+        echo '<script>alert("Data Submitted Successfully");</script>';
+    } else {
+        echo '<script>alert("Something Went Wrong");</script>';
+    }
+    header('location:' . $_SERVER['PHP_SELF']);
+}
 ?>
 <div class="contact-area">
     <div class="image">
         <img src="/assets/img/contact-banner.jpg" class="img-fluid" alt="Responsive image">
     </div>
     <div class="container">
-        <!-- <div class="row">
-            <div class="col-md-8 offset-md-2">
-                
-            </div>
-        </div> -->
         <div class="row negative-mar">
             <div class="col-md-6">
                 <div class="contact-form">
-                    <form action="#" class="card">
+                    <form action="#" class="card" method="post">
                         <div class="head">
                             <div class="head p-2">
                                 <h3 class=" text-center">Get In<span> Touch</span></h3>
                             </div>
-                        </div> <input type="text" placeholder="Enter Your Name">
-                        <input type="email" placeholder="Enter Your Email">
-                        <input type="tel" placeholder="Enter Your Phone">
+                        </div> <input type="text" name="name" required placeholder="Enter Your Name">
+                        <input type="email" name="email" required placeholder="Enter Your Email">
+                        <input type="tel" name="phone" required placeholder="Enter Your Phone">
 
                         <div class="row">
                             <div class="col-md-12">
                                 <p>
-                                    <textarea cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                                    <textarea cols="30" name="message" required rows="10" placeholder="Write Your Message"></textarea>
                                 </p>
                             </div>
                         </div>

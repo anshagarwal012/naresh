@@ -1,3 +1,6 @@
+<?php
+require('admin/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 

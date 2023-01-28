@@ -40,60 +40,37 @@ require('header.php');
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 1
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Cy Ganderton
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Quality Control Specialist
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Blue
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 2
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Hart Hagerty
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Desktop Support Technician
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Purple
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 3
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Brice Swyre
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Tax Accountant
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">Red</td>
-                                </tr>
-                                <tr>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        ID 4
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Marjy Ferencz
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Office Assistant I
-                                    </td>
-                                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                        Crimson
-                                    </td>
-                                </tr>
+                                <?php
+                                $sql = "SELECT * FROM contacts";
+                                $result = mysqli_query($conn, $sql);
+                                if ($result) {
+                                    $s = 1;
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                            <tr>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $s ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['name'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['email'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['phone'] ?>
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['message'] ?>
+                                                </td>
+                                            </tr>
+                                <?php
+                                            $s++;
+                                        }
+                                    }
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>

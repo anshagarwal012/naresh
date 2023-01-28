@@ -1,6 +1,30 @@
 <?php
 $heading = "Apply For Membership";
 require('header.php');
+if (isset($_POST) && !empty($_POST)) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $country = $_POST['country'];
+    $linkedin_url = $_POST['linkedin_url'];
+    $company_name = $_POST['company_name'];
+    $referral = $_POST['referral'];
+    $active_investor = $_POST['active_investor'];
+    $invest_as = $_POST['invest_as'];
+    $radio = $_POST['radio'];
+    $declaration = $_POST['declaration'];
+
+    $sql = 'INSERT INTO lp (`name`, `email`, `phone`, `city`, `state`, `country`, `linkedin_url`, `company_name`, `referral`, `active_investor`, `invest_as`, `radio`, `declaration`)
+    VALUES ("' . $name . '", "' . $email . '", "' . $phone . '", "' . $city . '", "' . $state . '", "' . $country . '", "' . $linkedin_url . '", "' . $company_name . '", "' . $referral . '", "' . $active_investor . '", "' . $invest_as . '", "' . $radio . '", "' . $declaration . '")';
+    if (mysqli_query($conn, $sql) === True) {
+        echo '<script>alert("Data Submitted Successfully");</script>';
+    } else {
+        echo '<script>alert("Something Went Wrong");</script>';
+    }
+    header('location:' . $_SERVER['PHP_SELF']);
+}
 ?>
 
 <div class="team-area">
@@ -19,107 +43,106 @@ require('header.php');
             </div>
         </div>
         <div class="form w-50 mx-auto">
-            <form class="card" style="background-color: #fffef2;">
+            <form class="card" style="background-color: #fffef2;" method="post">
                 <div class="form-group py-3">
                     <label class="required">Full Name</label>
-                    <input type="text" required class="form-control" id="" placeholder="Full Name">
+                    <input type="text" required class="form-control" name="name" id="" placeholder="Full Name">
                 </div>
                 <div class="form-group py-3">
                     <label class="required">Email address</label>
-                    <input type="email" required class="form-control" id="" placeholder="Enter Email">
+                    <input type="email" required class="form-control" name="email" id="" placeholder="Enter Email">
                 </div>
                 <div class="form-group py-3">
                     <label class="required">Phone Number</label>
-                    <input type="text" required class="form-control" id="" placeholder="Phone Number">
+                    <input type="text" required class="form-control" name="phone" id="" placeholder="Phone Number">
                 </div>
                 <div class="form-group py-3">
                     <label class="required">City</label>
-                    <input type="text" required class="form-control" id="" placeholder="City">
+                    <input type="text" required class="form-control" name="city" id="" placeholder="City">
                 </div>
                 <div class="form-group py-3">
                     <label class="required">State</label>
-                    <input type="text" required class="form-control" id="" placeholder="State">
+                    <input type="text" required class="form-control" name="state" id="" placeholder="State">
                 </div>
                 <div class="form-group py-3">
                     <label class="required">Country</label>
-                    <select class="form-control" required>
-                        <option>Australia</option>
-                        <option>Austria</option>
-                        <option>Bahrain</option>
-                        <option>Belgium</option>
-                        <option>Brazil</option>
-                        <option>Canada</option>
-                        <option>China</option>
-                        <option>Cyprus</option>
-                        <option>Czech Republic</option>
-                        <option>Denmark</option>
-                        <option>Estonia</option>
-                        <option>Finland</option>
-                        <option>France</option>
-                        <option>Germany</option>
-                        <option>Greece</option>
-                        <option>Hong Kong SAR</option>
-                        <option>Hungary</option>
-                        <option>Iceland</option>
-                        <option>India</option>
-                        <option>Indonesia</option>
-                        <option>Ireland</option>
-                        <option>Israel</option>
-                        <option>Italy</option>
-                        <option>Japan</option>
-                        <option>Kuwait</option>
-                        <option>Latvia</option>
-                        <option>Luxembourg</option>
-                        <option>Malta</option>
-                        <option>Mexico</option>
-                        <option>Netherlands</option>
-                        <option>New Zealand</option>
-                        <option>Norway</option>
-                        <option>Poland</option>
-                        <option>Portugal</option>
-                        <option>Qatar</option>
-                        <option>Russia</option>
-                        <option>Saudi Arabia</option>
-                        <option>Singapore</option>
-                        <option>South Korea</option>
-                        <option>Spain</option>
-                        <option>Sweden</option>
-                        <option>Switzerland</option>
-                        <option>Taiwan</option>
-                        <option>Taiwan Province of China</option>
-                        <option>Thailand</option>
-                        <option>Turkey</option>
-                        <option>United Arab Emirates</option>
-                        <option>United Kingdom</option>
-                        <option>United States</option>
-                        <option>Other</option>
+                    <select class="form-control" required name="country">
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Cyprus">Cyprus</option>
+                        <option value="Czech Republic">Czech Republic</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Hong Kong SAR">Hong Kong SAR</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="Taiwan Province of China">Taiwan Province of China</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States">United States</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <div class="form-group py-3">
                     <label class="">Linkedin Url</label>
-                    <input type="text" class="form-control" id="" placeholder="Linkedin Url">
+                    <input type="text" class="form-control" name="linkedin_url" id="" placeholder="Linkedin Url">
                 </div>
                 <div class="form-group py-3">
                     <label class="">Company Name</label>
-                    <input type="text" class="form-control" id="" placeholder="Company Name">
+                    <input type="text" class="form-control" name="company_name" id="" placeholder="Company Name">
                 </div>
                 <div class="form-group py-3">
                     <label class="">Referral (if any)</label>
-                    <input type="text" class="form-control" id="" placeholder="Referral (if any)">
+                    <input type="text" class="form-control" name="referral" id="" placeholder="Referral (if any)">
                 </div>
                 <div class="form-group py-3">
                     <label class="required">Are you an active investor ?</label>
-                    <select class="form-control" required>
-                        <option></option>
-                        <option>Yes</option>
-                        <option>No</option>
+                    <select class="form-control" required name="active_investor">
+                        <option disabled></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
                     </select>
                 </div>
                 <div class="h6 text-center">Accreditation</div>
                 <div class="form-group py-3">
                     <label class="required">I am applying to invest as: </label>
-                    <select class="form-control" required>
-                        <option value=""> </option>
+                    <select class="form-control" required name="invest_as">
                         <option value="Myself as an individual"> Myself as an individual </option>
                         <option value="Trust"> Trust </option>
                         <option value="LLC"> LLC </option>
@@ -131,31 +154,31 @@ require('header.php');
                     <label class="required text-bold">Select one:</label>
                     <div class="row">
                         <div class="col-md-1 text-right p-0">
-                            <input type="radio" required name="radio" id="">
+                            <input type="radio" value="1" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p> Individual with a net worth (either individually or with my spouse, if any), and all property and other assets excluding my primary residence, that exceeds $500,000 including investments. </p>
                         </div>
                         <div class="col-md-1 text-right p-0">
-                            <input type="radio" required name="radio" id="">
+                            <input type="radio" value="2" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p> Individual with an annual income that was at least $50,000 in each of the two most recent years, and I expect such income in the current year.</p>
                         </div>
                         <div class="col-md-1 text-right p-0">
-                            <input type="radio" required name="radio" id="">
+                            <input type="radio" value="3" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p>Individual with an annual income, jointly with my spouse, of at least $75,000 in each of the two most recent years, and I expect such income in the current year.</p>
                         </div>
                         <div class="col-md-1 text-right p-0">
-                            <input type="radio" required name="radio" id="">
+                            <input type="radio" value="4" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p>An Entity (e.g., corporation, partnership, limited liability company, trust,etc.) in which all of the equity owners are accredited investors.</p>
                         </div>
                         <div class="col-md-1 text-right p-0">
-                            <input type="radio" required name="radio" id="">
+                            <input type="radio" value="5" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p>Other</p>
@@ -166,14 +189,14 @@ require('header.php');
                     <label class="required text-bold">Declaration:</label>
                     <div class="row">
                         <div class="col-md-1 text-right p-0">
-                            <input type="checkbox" name="radio" id="" required>
+                            <input type="checkbox" name="declaration" id="" required>
                         </div>
                         <div class="col-md-11">
                             <p>I agree that all the above information is correct, and that <b>Olive Venture Partners</b> may use the above information to contact me using the above information regarding my application as well news, alerts and other promotional materials</p>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" value="submit">Submit</button>
             </form>
         </div>
     </div>
