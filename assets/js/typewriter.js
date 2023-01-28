@@ -1,6 +1,5 @@
 const carouselText = [
-  { text: "Our vision is to assist New Age technology startups &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", color: "red" },
-  { text: "Our vision is to assist New Age technology startups", color: "red" },
+  { text: "Our vision is to assist New Age technology startups     in building the next future.", color: "red" },
   { text: "Our goal is to create value for our clients, and we operate with principles of excellence and trust.", color: "red" }
 ]
 $(document).ready(async function () {
