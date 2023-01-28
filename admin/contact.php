@@ -29,10 +29,13 @@ require('header.php');
                                         Name
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Job
+                                        Email
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                        Favorite Color
+                                        Phone
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Message
                                     </th>
                                 </tr>
                             </thead>
