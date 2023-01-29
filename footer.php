@@ -102,6 +102,7 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/typewriter.js"></script>
+<script src="assets/js/nav.js"></script>
 </body>
 
 </html>

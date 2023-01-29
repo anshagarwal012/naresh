@@ -23,6 +23,7 @@ require('admin/db.php');
     <link rel="stylesheet" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 
 <body>
@@ -35,9 +36,34 @@ require('admin/db.php');
             <div class="loader-section section-right"></div>
         </div>
         <!--/End preloader  -->
+
         <!-- Header Area Start-->
         <header class="sticky-header">
             <div class="container">
+                <div class="col">
+                    <div class="toggle">
+                        <a href="#" class="burger mt-3 js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                            <span></span>
+                        </a>
+                    </div>
+                    <aside class="sidebar">
+                        <div class="side-inner">
+                            <div class="nav-menu">
+                                <ul>
+                                    <li class="js-menu-toggle"><a href="#"><i class="fa fa-arrow-right"></a></i></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/whoweare">Who We Are</a></li>
+                                    <li><a href="/team">Team</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/funding" target="_blank" class="olive">Apply for Funding</a></li>
+                                    <li><a href="/lp" target="_blank" class="olive">Become an LP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
                 <div class="row">
                     <div class="col-md-2 my-auto">
                         <div class="logo">
@@ -58,7 +84,7 @@ require('admin/db.php');
                                 <li><a href="/lp" target="_blank" class="olive">Become an LP</a></li>
                             </ul>
                         </div>
-                        <div id="mobile-menu"></div>
+                        <!-- <div id="mobile-menu"> -->
                     </div>
                 </div>
             </div>
