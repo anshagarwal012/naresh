@@ -263,7 +263,7 @@ p {
 .input-cursor {
   display: inline-block;
   width: 2px;
-  height: 42px;
+  height: 30px;
   background-color: white;
   margin-left: 8px;
   animation: blink .6s linear infinite alternate;
@@ -377,7 +377,7 @@ form.card {
 .heade {
   position: relative;
   background-color: black;
-  height: 110vh;
+  height: 130vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;

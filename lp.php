@@ -152,48 +152,32 @@ if (isset($_POST) && !empty($_POST)) {
                 </div>
                 <div class="form-group py-3">
                     <label class="required text-bold">Select one:</label>
-                    <div class="row">
-                        <div class="col-md-1 p-0">
-                            <input type="radio" value="1" required name="radio" id="">
-                        </div>
-                        <div class="col-md-11">
-                            <p> Individual with a net worth (either individually or with my spouse, if any), and all property and other assets excluding my primary residence, that exceeds $500,000 including investments. </p>
-                        </div>
-                        <div class="col-md-1 p-0">
-                            <input type="radio" value="2" required name="radio" id="">
-                        </div>
-                        <div class="col-md-11">
-                            <p> Individual with an annual income that was at least $50,000 in each of the two most recent years, and I expect such income in the current year.</p>
-                        </div>
-                        <div class="col-md-1 p-0">
-                            <input type="radio" value="3" required name="radio" id="">
-                        </div>
-                        <div class="col-md-11">
-                            <p>Individual with an annual income, jointly with my spouse, of at least $75,000 in each of the two most recent years, and I expect such income in the current year.</p>
-                        </div>
-                        <div class="col-md-1 p-0">
-                            <input type="radio" value="4" required name="radio" id="">
-                        </div>
-                        <div class="col-md-11">
-                            <p>An Entity (e.g., corporation, partnership, limited liability company, trust,etc.) in which all of the equity owners are accredited investors.</p>
-                        </div>
-                        <div class="col-md-1 p-0">
-                            <input type="radio" value="5" required name="radio" id="">
-                        </div>
-                        <div class="col-md-11">
-                            <p>Other</p>
-                        </div>
+                    <div class="form-check py-3">
+                        <input type="radio" class="form-check-input" value="1" required name="radio" id="">
+                        <label class="form-check-label">Individual with a net worth (either individually or with my spouse, if any), and all property and other assets excluding my primary residence, that exceeds $500,000 including investments.</label>
+                    </div>
+                    <div class="form-check py-3">
+                        <input type="radio" class="form-check-input" value="2" required name="radio" id="">
+                        <label class="form-check-label">Individual with an annual income that was at least $50,000 in each of the two most recent years, and I expect such income in the current year.</label>
+                    </div>
+                    <div class="form-check py-3">
+                        <input type="radio" class="form-check-input" value="3" required name="radio" id="">
+                        <label class="form-check-label">Individual with an annual income, jointly with my spouse, of at least $75,000 in each of the two most recent years, and I expect such income in the current year.</label>
+                    </div>
+                    <div class="form-check py-3">
+                        <input type="radio" class="form-check-input" value="4" required name="radio" id="">
+                        <label class="form-check-label">An Entity (e.g., corporation, partnership, limited liability company, trust,etc.) in which all of the equity owners are accredited investors.</label>
+                    </div>
+                    <div class="form-check py-3">
+                        <input type="radio" class="form-check-input" value="5" required name="radio" id="">
+                        <label class="form-check-label">Other</label>
                     </div>
                 </div>
                 <div class="form-group py-3">
                     <label class="required text-bold">Declaration:</label>
-                    <div class="row">
-                        <div class="col-md-1 p-0">
-                            <input type="checkbox" name="declaration" id="" required>
-                        </div>
-                        <div class="col-md-11">
-                            <p>I agree that all the above information is correct, and that <b>Olive Venture Partners</b> may use the above information to contact me using the above information regarding my application as well news, alerts and other promotional materials</p>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="declaration" id="" required>
+                        <label class="form-check-label">I agree that all the above information is correct, and that <b>Olive Venture Partners</b> may use the above information to contact me using the above information regarding my application as well news, alerts and other promotional materials</label>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary" value="submit">Submit</button>
