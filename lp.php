@@ -153,31 +153,31 @@ if (isset($_POST) && !empty($_POST)) {
                 <div class="form-group py-3">
                     <label class="required text-bold">Select one:</label>
                     <div class="row">
-                        <div class="col-md-1 text-right p-0">
+                        <div class="col-md-1 p-0">
                             <input type="radio" value="1" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p> Individual with a net worth (either individually or with my spouse, if any), and all property and other assets excluding my primary residence, that exceeds $500,000 including investments. </p>
                         </div>
-                        <div class="col-md-1 text-right p-0">
+                        <div class="col-md-1 p-0">
                             <input type="radio" value="2" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p> Individual with an annual income that was at least $50,000 in each of the two most recent years, and I expect such income in the current year.</p>
                         </div>
-                        <div class="col-md-1 text-right p-0">
+                        <div class="col-md-1 p-0">
                             <input type="radio" value="3" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p>Individual with an annual income, jointly with my spouse, of at least $75,000 in each of the two most recent years, and I expect such income in the current year.</p>
                         </div>
-                        <div class="col-md-1 text-right p-0">
+                        <div class="col-md-1 p-0">
                             <input type="radio" value="4" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
                             <p>An Entity (e.g., corporation, partnership, limited liability company, trust,etc.) in which all of the equity owners are accredited investors.</p>
                         </div>
-                        <div class="col-md-1 text-right p-0">
+                        <div class="col-md-1 p-0">
                             <input type="radio" value="5" required name="radio" id="">
                         </div>
                         <div class="col-md-11">
@@ -188,7 +188,7 @@ if (isset($_POST) && !empty($_POST)) {
                 <div class="form-group py-3">
                     <label class="required text-bold">Declaration:</label>
                     <div class="row">
-                        <div class="col-md-1 text-right p-0">
+                        <div class="col-md-1 p-0">
                             <input type="checkbox" name="declaration" id="" required>
                         </div>
                         <div class="col-md-11">

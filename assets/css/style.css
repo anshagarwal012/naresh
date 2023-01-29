@@ -119,7 +119,11 @@ label {
 
 .footer-logo img,
 .logo img {
-  max-width: 150px;
+  max-width: 200px;
+}
+
+.image img {
+  min-height: 500px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,6 +131,10 @@ label {
     font-size: 25px !important;
     font-weight: 700 !important;
     line-height: 5px !important;
+  }
+
+  .w-50 {
+    width: 95% !important;
   }
 }
 
