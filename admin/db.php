@@ -1,4 +1,5 @@
 <?php
+session_start();
 date_default_timezone_set('Asia/Kolkata');
 $servername = "151.106.117.102";
 $username = "u338280037_naresh";

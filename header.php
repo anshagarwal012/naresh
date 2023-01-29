@@ -50,12 +50,12 @@ require('admin/db.php');
                         <div class="main-menu">
                             <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/whoweare.php">Who We Are</a></li>
-                                <li><a href="/team.php">Team</a></li>
-                                <li><a href="/services.php">Services</a></li>
-                                <li><a href="/contact.php">Contact Us</a></li>
-                                <li><a href="/funding.php" target="_blank" class="olive">Apply for Funding</a></li>
-                                <li><a href="/lp.php" target="_blank" class="olive">Become an LP</a></li>
+                                <li><a href="/whoweare">Who We Are</a></li>
+                                <li><a href="/team">Team</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/funding" target="_blank" class="olive">Apply for Funding</a></li>
+                                <li><a href="/lp" target="_blank" class="olive">Become an LP</a></li>
                             </ul>
                         </div>
                         <div id="mobile-menu"></div>
