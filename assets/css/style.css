@@ -120,6 +120,7 @@ label {
 .footer-logo img,
 .logo img {
   max-width: 200px;
+  width: 150px;
 }
 
 .image img {
