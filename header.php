@@ -42,7 +42,7 @@ require('admin/db.php');
                     <div class="col-md-2 my-auto">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="assets/img/logo.png" alt="">
+                                <img src="assets/svg/logo.svg" alt="">
                             </a>
                         </div>
                     </div>

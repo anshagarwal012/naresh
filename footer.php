@@ -73,7 +73,7 @@
                 <div class="col-md-6">
                     <div class="footer-logo">
                         <a href="/">
-                            <img src="assets/img/footer-logo.png" alt="">
+                            <img src="assets/svg/logo.svg" alt="">
                         </a>
                     </div>
                 </div>
