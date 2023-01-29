@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $pass = $_POST['pass'];
     if ($id == 'naresh' && $pass = 'admin@123') {
         $_SESSION['pass'] = 'yes';
-        header('location:home.php');
+        header('location:./home');
         die();
     } else {
         $err = '<div class="alert alert-info my-2" role="alert">
