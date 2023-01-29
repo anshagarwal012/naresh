@@ -17,6 +17,10 @@ require('header.php');
                 from: $refs.table,
                 sort: true,
                 search: true,
+                pagination: true,
+                  pagination: {
+                        limit: 50
+                    },
               }).render($refs.wrapper);">
                     <div class="is-scrollbar-hidden min-w-full overflow-x-auto">
                         <table x-ref="table" class="w-full text-left">
@@ -45,6 +49,8 @@ require('header.php');
                             <tbody>
                                 <?php
                                 $sql = "SELECT * FROM contacts order by id desc";
+                                $result = mysqli_query($conn, $sql);
+                                echo '<input type="hidden" class="data" value="' . str_replace('"', "'", json_encode(mysqli_fetch_All($result))) . '">';
                                 $result = mysqli_query($conn, $sql);
                                 if ($result) {
                                     $s = 1;
@@ -82,6 +88,7 @@ require('header.php');
                     </div>
                     <div>
                         <div x-ref="wrapper"></div>
+                        <a class="btn bg-primary text-white" onclick="tableToCSV()">Export CSV</a>
                     </div>
                 </div>
             </div>

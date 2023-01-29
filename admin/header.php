@@ -30,6 +30,25 @@ require('db.php');
         localStorage.getItem("_x_darkMode_on") === "true" &&
             document.documentElement.classList.add("dark");
     </script>
+    <style>
+        table.gridjs-table th,
+        td {
+            padding: 5px !important;
+            text-transform: none !important;
+            color: #333 !important;
+            font-size: 12px;
+            padding-right: 10px !important;
+        }
+
+        .dark table.gridjs-table th,
+        .dark td {
+            padding: 5px !important;
+            text-transform: none !important;
+            color: #fff !important;
+            font-size: 12px;
+            padding-right: 10px !important;
+        }
+    </style>
 </head>
 
 <body x-data x-bind="$store.global.documentBody" class="is-header-blur is-sidebar-open">
