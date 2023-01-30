@@ -25,17 +25,17 @@ require('header.php');
                             <!-- </blockquote> -->
                             <div class="dicover-list">
                                 <ul class="list-group">
-                                    <li class="p-1 list-group-item d-flex flex-row align-items-center">
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-start">
                                         <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p class="my-auto">Seed and early stage technology startups.</p>
+                                        <p class="">Seed and early stage technology startups.</p>
                                     </li>
-                                    <li class="p-1 list-group-item d-flex flex-row align-items-center">
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p class="my-auto">Education technology startups.</p>
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-start">
+                                        <i class="fa fa-check mb-2" aria-hidden="true"></i>
+                                        <p class="mb-0">Education technology startups.</p>
                                     </li>
-                                    <li class="p-1 list-group-item d-flex flex-row align-items-center">
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-start">
                                         <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p class="my-auto">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
+                                        <p class="">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
                                     </li>
                                 </ul>
                                 <ul>
