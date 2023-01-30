@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-2 my-auto">
                     <div class="footer-logo text-center">
-                        <div class="row">
+                        <div class="row d-flex justify-content-center">
                             <div class="d-inline mt-4 mt-md-0">
                                 <a class="social-team" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
