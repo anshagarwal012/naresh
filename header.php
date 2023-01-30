@@ -67,7 +67,7 @@ require('admin/db.php');
                 <div class="row">
                     <div class="col-md-2 my-auto">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/svg/logo.svg" alt="">
                             </a>
                         </div>
