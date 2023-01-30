@@ -19,7 +19,7 @@ require('header.php');
                         <img src="/assets/svg/fundraising.svg" alt="" class="value-image mb-3">
                         <h4 class="text-center value-title">
                             Fundraising Support</h4>
-                            <hr class="w-25">
+                        <hr class="w-25">
                         <p class="text-center value-text">
                             Our fundraising support services aid startups in securing funding for their pre-seed and seed rounds. </p>
                     </div>
@@ -29,7 +29,7 @@ require('header.php');
                         <img src="/assets/svg/acceleration.svg" alt="" class="value-image">
                         <h4 class="text-center value-title">
                             Acceleration Support </h4>
-                            <hr class="w-25">
+                        <hr class="w-25">
                         <p class="text-center value-text">
                             Our acceleration program supports early-stage companies by offering guidance and assistance to help them grow and succeed. </p>
                     </div>
@@ -39,11 +39,11 @@ require('header.php');
                         <img src="/assets/svg/ancillary.svg" alt="" class="value-image">
                         <h4 class="text-center value-title">
                             Ancillary Support Services</h4>
-                            <hr class="w-25">
-                        <p class="text-center value-text">
-                             i. Fund raise Documents - Deck and Financial Model<br>
-                             ii. Business Structuring & Advisory services<br>
-                             iii. Accounting & Secretarial services.</p>
+                        <hr class="w-25">
+                        <p class="text-left value-text">
+                            i. Fund raise Documents - Deck and Financial Model.<br>
+                            ii. Business Structuring & Advisory services.<br>
+                            iii. Accounting & Secretarial services.</p>
                     </div>
                 </div>
             </div>

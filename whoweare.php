@@ -24,21 +24,26 @@ require('header.php');
                             </p>
                             <!-- </blockquote> -->
                             <div class="dicover-list">
+                                <ul class="list-group">
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-center">
+                                        <i class="my-auto fa fa-check" aria-hidden="true"></i>
+                                        <p class="my-auto">Seed and early stage technology startups.</p>
+                                    </li>
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-center">
+                                        <i class="my-auto fa fa-check" aria-hidden="true"></i>
+                                        <p class="my-auto">Education technology startups.</p>
+                                    </li>
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-center">
+                                        <i class="my-auto fa fa-check" aria-hidden="true"></i>
+                                        <p class="my-auto">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
+                                    </li>
+                                </ul>
                                 <ul>
                                     <li>
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p>Seed and early stage technology startups.
-                                        </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p>Education technology startups.
-                                        </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p>Life science and healthcare startups, including health technology, medical technology, and biotechnology.
-                                        </p>
                                     </li>
                                 </ul>
                                 <!-- <a class="viso-btn discover" href="#">View All Features</a> -->

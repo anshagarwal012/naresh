@@ -72,7 +72,7 @@ require('admin/db.php');
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-10 my-auto">
+                    <div class="col-md-10 mt-auto">
                         <div class="main-menu">
                             <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/">Home</a></li>
