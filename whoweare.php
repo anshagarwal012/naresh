@@ -4,7 +4,7 @@ require('header.php');
 ?>
 <div class="single-blog-page">
     <div class="container">
-        <div class="section-padding">
+        <div class="section-padding mt-5">
             <div class="row">
                 <!-- <div class="col-md-5 head p-2">
                     <h3 class="pt-3">Our <span>Focus Area</span></h3>
@@ -26,15 +26,15 @@ require('header.php');
                             <div class="dicover-list">
                                 <ul class="list-group">
                                     <li class="p-1 list-group-item d-flex flex-row align-items-center">
-                                        <i class="my-auto fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
                                         <p class="my-auto">Seed and early stage technology startups.</p>
                                     </li>
                                     <li class="p-1 list-group-item d-flex flex-row align-items-center">
-                                        <i class="my-auto fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
                                         <p class="my-auto">Education technology startups.</p>
                                     </li>
                                     <li class="p-1 list-group-item d-flex flex-row align-items-center">
-                                        <i class="my-auto fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
                                         <p class="my-auto">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
                                     </li>
                                 </ul>

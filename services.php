@@ -40,7 +40,7 @@ require('header.php');
                         <h4 class="text-center value-title">
                             Ancillary Support Services</h4>
                         <hr class="w-25">
-                        <p class="text-left value-text">
+                        <p class="text-center value-text">
                             i. Fund raise Documents - Deck and Financial Model.<br>
                             ii. Business Structuring & Advisory services.<br>
                             iii. Accounting & Secretarial services.</p>

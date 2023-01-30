@@ -1,7 +1,7 @@
 <!-- Footer Area -->
 <footer>
     <div class="footer-bottom">
-        <div class="container">
+        <div class="container-fluid px-5">
             <div class="row">
                 <div class="col-md-5">
                     <div class="footer-logo">
@@ -11,15 +11,15 @@
                     </div>
                 </div>
                 <div class="col-md-2 my-auto">
-                    <div class="footer-logo">
+                    <div class="footer-logo text-center">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="d-inline mt-4 mt-md-0">
                                 <a class="social-team" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="d-inline mt-4 mt-md-0">
                                 <a class="social-team" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="d-inline mt-4 mt-md-0">
                                 <a class="social-team" target="_blank" href="#"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>

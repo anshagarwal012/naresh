@@ -39,7 +39,7 @@ require('admin/db.php');
 
         <!-- Header Area Start-->
         <header class="sticky-header">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="col">
                     <div class="toggle">
                         <a href="#" class="burger mt-3 js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
