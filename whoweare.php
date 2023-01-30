@@ -27,7 +27,7 @@ require('header.php');
                                 <ul class="list-group">
                                     <li class="p-1 list-group-item d-flex flex-row align-items-start">
                                         <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p class="">Seed and early stage technology startups.</p>
+                                        <p class="mb-0">Seed and early stage technology startups.</p>
                                     </li>
                                     <li class="p-1 list-group-item d-flex flex-row align-items-start">
                                         <i class="fa fa-check mb-2" aria-hidden="true"></i>
@@ -35,7 +35,7 @@ require('header.php');
                                     </li>
                                     <li class="p-1 list-group-item d-flex flex-row align-items-start">
                                         <i class="fa fa-check" aria-hidden="true"></i>
-                                        <p class="">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
+                                        <p class="mb-0">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
                                     </li>
                                 </ul>
                                 <ul>
