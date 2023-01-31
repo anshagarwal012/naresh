@@ -64,7 +64,7 @@ require('admin/db.php');
 
                     </aside>
                 </div>
-                <div class="row">
+                <div class="row d-flex justify-content-between align-items-center">
                     <div class="col-md-2 my-auto">
                         <div class="logo">
                             <a href="/">
@@ -72,7 +72,7 @@ require('admin/db.php');
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7 mt-auto">
+                    <div class="col-md-5 mt-auto">
                         <div class="main-menu">
                             <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/">Home</a></li>
@@ -83,7 +83,7 @@ require('admin/db.php');
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 mt-auto">
+                    <div class="col-md-3.5 mt-auto">
                         <div class="main-menu">
                             <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/funding" target="_blank" class="olive">Apply for Funding</a></li>
