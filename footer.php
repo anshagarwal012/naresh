@@ -1,6 +1,6 @@
 <!-- Footer Area -->
 <footer>
-    <div class="footer-bottom">
+    <div class="footer-bottom bg-white">
         <div class="container-fluid px-5">
             <div class="row">
                 <div class="col-md-5">

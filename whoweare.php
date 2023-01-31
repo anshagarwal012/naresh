@@ -16,7 +16,7 @@ require('header.php');
 
                             <p>In addition to providing early-stage equity capital, <strong>Olive Venture Partners (OVP)</strong> also offers startup advisory services to its portfolio companies. These services include assistance with valuation, business plan and financial modeling, creating pitch decks, conducting due diligence, and closing deals. This holistic support is aimed at helping companies achieve high growth potential and maximize the chances of success.</p>
                             <!-- <blockquote> -->
-                            <p>
+                            <br><p>
                             <div class="head p-2">
                                 <h3 class="pt-3">Our <span>Focus Area...</span></h3>
                             </div>
