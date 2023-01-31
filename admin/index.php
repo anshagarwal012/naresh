@@ -7,7 +7,7 @@ if (!empty($_SESSION['pass'])) {
 if (isset($_POST['submit'])) {
     $id = $_POST['id'];
     $pass = $_POST['pass'];
-    if ($id == 'naresh' && $pass = 'admin@123') {
+    if ($id == 'naresh' && $pass == 'admin@123') {
         $_SESSION['pass'] = 'yes';
         header('location:./home');
         die();
