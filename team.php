@@ -2,7 +2,7 @@
 $heading = "Our Team";
 require('header.php');
 ?>
-<div class="team-area">
+<div class="team-area bg-light">
     <div class="container section-padding">
         <div class="row">
             <div class="col-md-8 offset-md-2">

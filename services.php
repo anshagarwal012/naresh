@@ -2,7 +2,7 @@
 $heading = "Our Services";
 require('header.php');
 ?>
-<div class="section-padding">
+<div class="section-padding bg-light">
     <section class="section services-section" id="services">
         <div class="container">
             <div class="row justify-content-center text-center">

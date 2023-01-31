@@ -17,7 +17,7 @@ if (isset($_POST) && !empty($_POST)) {
     header('location:' . $_SERVER['PHP_SELF']);
 }
 ?>
-<div class="contact-area">
+<div class="contact-area bg-light">
     <div class="image">
         <img src="/assets/img/contact-banner.jpg" class="img-fluid" alt="Responsive image">
     </div>

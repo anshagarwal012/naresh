@@ -2,7 +2,7 @@
 $heading = "Who We Are";
 require('header.php');
 ?>
-<div class="single-blog-page">
+<div class="single-blog-page bg-light">
     <div class="container">
         <div class="section-padding mt-5">
             <div class="row">
@@ -25,28 +25,19 @@ require('header.php');
                             <!-- </blockquote> -->
                             <div class="dicover-list">
                                 <ul class="list-group">
-                                    <li class="p-1 list-group-item d-flex flex-row align-items-start">
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-start bg-light">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                         <p class="mb-0">Seed and early stage technology startups.</p>
                                     </li>
-                                    <li class="p-1 list-group-item d-flex flex-row align-items-start">
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-start bg-light">
                                         <i class="fa fa-check mb-2" aria-hidden="true"></i>
                                         <p class="mb-0">Education technology startups.</p>
                                     </li>
-                                    <li class="p-1 list-group-item d-flex flex-row align-items-start">
+                                    <li class="p-1 list-group-item d-flex flex-row align-items-start bg-light">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                         <p class="mb-0">Life science and healthcare startups, including health technology, medical technology, and biotechnology.</p>
                                     </li>
                                 </ul>
-                                <ul>
-                                    <li>
-                                    </li>
-                                    <li>
-                                    </li>
-                                    <li>
-                                    </li>
-                                </ul>
-                                <!-- <a class="viso-btn discover" href="#">View All Features</a> -->
                             </div>
                         </div>
                     </div>
