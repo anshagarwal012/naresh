@@ -14,13 +14,13 @@
                     <div class="footer-logo text-center">
                         <div class="row d-flex justify-content-center">
                             <div class="d-inline mt-4 mt-md-0">
-                                <a class="social-team" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="social-team" target="_blank" href="https://www.linkedin.com/in/olive-venture-partners-a59252264/"><i class="fa fa-linkedin"></i></a>
                             </div>
                             <div class="d-inline mt-4 mt-md-0">
-                                <a class="social-team" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="social-team" target="_blank" href="https://twitter.com/olive_venture"><i class="fa fa-twitter"></i></a>
                             </div>
                             <div class="d-inline mt-4 mt-md-0">
-                                <a class="social-team" target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+                                <a class="social-team" target="_blank" href="https://instagram.com/oliveventurepartners"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
