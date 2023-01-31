@@ -39,7 +39,7 @@ require('admin/db.php');
 
         <!-- Header Area Start-->
         <header class="sticky-header">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-md-5">
                 <div class="col">
                     <div class="toggle">
                         <a href="#" class="burger mt-3 js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -72,7 +72,7 @@ require('admin/db.php');
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-10 mt-auto">
+                    <div class="col-md-7 mt-auto">
                         <div class="main-menu">
                             <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/">Home</a></li>
@@ -80,11 +80,16 @@ require('admin/db.php');
                                 <li><a href="/team">Team</a></li>
                                 <li><a href="/services">Services</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-auto">
+                        <div class="main-menu">
+                            <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/funding" target="_blank" class="olive">Apply for Funding</a></li>
                                 <li><a href="/lp" target="_blank" class="olive">Become an LP</a></li>
                             </ul>
                         </div>
-                        <!-- <div id="mobile-menu"> -->
                     </div>
                 </div>
             </div>
