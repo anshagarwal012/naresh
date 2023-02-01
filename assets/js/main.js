@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
     // Sticky Menu
     //==================
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 400) {
+        if ($(this).scrollTop() > 250) {
             $('.sticky-header').addClass("sticky animated fadeInDown");
         } else {
             $('.sticky-header').removeClass("sticky animated fadeInDown");
