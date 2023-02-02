@@ -12,8 +12,8 @@ require('header.php');
                 <div class="col-md-12 para p-2">
                     <div class="single-posts section-padding ">
                         <div class="entry-content">
-                            <p><strong>Olive Venture Partners (OVP)</strong> is an angel investor group that focuses on early-stage tech startups that have high growth potential. The group is composed of top venture capitalists and high net worth individuals who are current or former high-tech executives. OVP offers between $50,000 to $500,000 in pre-seed and seed stage equity capital raises, and is based in India with a commitment to invest in over 15 startups annually throughout Southeast Asia.</p>
-
+                            <p><strong>Olive Venture Partners (OVP)</strong> is an angel investor group that focuses on early-stage tech startups that have high growth potential. The group is composed of top venture capitalists and high net worth individuals who are current or former high-tech executives. OVP offers between US $50,000 to US $500,000 in pre-seed and seed stage equity capital raises, and is based in India with a commitment to invest in over 15 startups annually throughout Southeast Asia.</p>
+                            <br>
                             <p>In addition to providing early-stage equity capital, <strong>Olive Venture Partners (OVP)</strong> also offers startup advisory services to its portfolio companies. These services include assistance with valuation, business plan and financial modeling, creating pitch decks, conducting due diligence, and closing deals. This holistic support is aimed at helping companies achieve high growth potential and maximize the chances of success.</p>
                             <!-- <blockquote> -->
                             <br><p>
