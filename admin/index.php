@@ -4,6 +4,7 @@ $err = "";
 if (!empty($_SESSION['pass'])) {
     header('location:./home');
 }
+
 if (isset($_POST['submit'])) {
     $id = $_POST['id'];
     $pass = $_POST['pass'];
@@ -52,9 +53,8 @@ if (isset($_POST['submit'])) {
                             <br>
                             <?php echo $err; ?>
                             <div class="form-group">
-                                <button type="submit" name="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                                <button type="button" name="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
                             </div>
-
                         </form>
                     </div>
                 </div>

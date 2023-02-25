@@ -64,7 +64,7 @@ if (isset($_POST) && !empty($_POST)) {
                                         <div class="head">
                                             <h3 class="">Office</h3>
                                         </div>
-                                        <p>H- 9/5, Malviya Nagar, South Delhi, India - 110016</p>
+                                        <p>H- 9/5, Malviya Nagar, South Delhi, India - 110017</p>
                                     </div>
                                 </div>
                             </li>

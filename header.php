@@ -8,7 +8,14 @@ require('admin/db.php');
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="author" content="themeholder">
+    <meta name="title" content="Olive Venture Partners - <?= $heading ?>">
+    <meta name="description" content="Olive Venture Partners. Olive Venture Partners (OVP) is an angel investor group that focuses on early-stage tech startups that have high growth potential.">
+    <meta name="keywords" content="Olive, Venture Partners, OVP, Naresh, Olive Venture Partners">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Naresh Kumar">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Page Title -->
     <title>Olive Venture Partners - <?= $heading ?></title>
@@ -24,6 +31,15 @@ require('admin/db.php');
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/nav.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE4L1HWRDJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VE4L1HWRDJ');
+    </script>
 </head>
 
 <body>

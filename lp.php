@@ -19,7 +19,7 @@ if (isset($_POST) && !empty($_POST)) {
     $sql = 'INSERT INTO lp (`datetime`,`name`, `email`, `phone`, `city`, `state`, `country`, `linkedin_url`, `company_name`, `referral`, `active_investor`, `invest_as`, `radio`, `declaration`)
     VALUES ("' . date("d-m-y h:i:s") . '","' . $name . '", "' . $email . '", "' . $phone . '", "' . $city . '", "' . $state . '", "' . $country . '", "' . $linkedin_url . '", "' . $company_name . '", "' . $referral . '", "' . $active_investor . '", "' . $invest_as . '", "' . $radio . '", "' . $declaration . '")';
     if (mysqli_query($conn, $sql) === True) {
-        echo '<script>alert("Data Submitted Successfully");</script>';
+        echo '<script>alert("Thank you for submitting, we will get back to you shortly.");</script>';
     } else {
         echo '<script>alert("Something Went Wrong");</script>';
     }
