@@ -44,10 +44,10 @@ jQuery(document).ready(function () {
     //==============
     // Mobile mneu
     //==============
-    $('.main-menu').slicknav({
-        prependTo: '#mobile-menu',
-        label: '',
-    });
+    // $('.main-menu').slicknav({
+    //     prependTo: '#mobile-menu',
+    //     label: '',
+    // });
 
     //=========================  
     // Active Service Carousel
@@ -77,47 +77,47 @@ jQuery(document).ready(function () {
     //======================
     // Active team Carousel
     //=======================
-    $(".active-team-carousl").owlCarousel({
-        items: 3,
-        loop: false,
-        margin: 30,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        responsive: {
+    // $(".active-team-carousl").owlCarousel({
+    //     items: 3,
+    //     loop: false,
+    //     margin: 30,
+    //     dots: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 4000,
+    //     responsive: {
 
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            }
-        }
+    //         0: {
+    //             items: 1
+    //         },
+    //         768: {
+    //             items: 2
+    //         },
+    //         992: {
+    //             items: 3
+    //         }
+    //     }
 
-    });
+    // });
 
     //=================
     // Testimonial
     //==================
-    $(".testimonial-active").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 30,
-        nav: true,
-        dots: false,
-        navText: ["<i class='flaticon-back'></i>", "<i class=flaticon-next></i"],
-        autoplay: false,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        lazyLoad: true,
-        autoplayTimeout: 4000,
-        autoplaySpeed: 3000,
-        tagePadding: 30,
-        smartSpeed: 450
-    });
+    // $(".testimonial-active").owlCarousel({
+    //     items: 1,
+    //     loop: true,
+    //     margin: 30,
+    //     nav: true,
+    //     dots: false,
+    //     navText: ["<i class='flaticon-back'></i>", "<i class=flaticon-next></i"],
+    //     autoplay: false,
+    //     animateOut: 'slideOutUp',
+    //     animateIn: 'slideInUp',
+    //     lazyLoad: true,
+    //     autoplayTimeout: 4000,
+    //     autoplaySpeed: 3000,
+    //     tagePadding: 30,
+    //     smartSpeed: 450
+    // });
 
     //================
     // Active Isotope

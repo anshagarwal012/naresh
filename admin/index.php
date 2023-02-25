@@ -38,7 +38,7 @@ if (!empty($_SESSION['pass'])) {
                     <div class="login-wrap p-0">
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="signin-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="id" placeholder="Username" required>
+                                <input type="text" class="form-control" name="id" id="username" placeholder="Username" required>
                             </div>
                             <div class="form-group">
                                 <input id="password-field" type="password" name="pass" class="form-control" placeholder="Password" required>
@@ -46,15 +46,16 @@ if (!empty($_SESSION['pass'])) {
                             <br>
                             <?php echo $err; ?>
                             <div class="form-group">
-                                <button type="button" name="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                                <button type="button" name="submit" class="form-control btn btn-primary login_submit submit px-3">Sign In</button>
                             </div>
+
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script>
+        <script>
         document.querySelector('.login_submit').addEventListener('click', function() {
             var id = document.querySelector('#username').value;
             var password = document.querySelector('#password-field').value;

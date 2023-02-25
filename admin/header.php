@@ -109,7 +109,7 @@ if (empty($_SESSION['pass'])) {
                         <ul class="flex flex-1 flex-col px-4 font-inter">
                             <li>
                                 <a x-data="navLink" href="home" :class="isActive ? 'font-medium text-primary dark:text-accent-light' : 'text-slate-600 hover:text-slate-900 dark:text-navy-200 dark:hover:text-navy-50'" class="flex py-2 text-xs+ tracking-wide outline-none transition-colors duration-300 ease-in-out">
-                                    Membership
+                                    Apply For Funding
                                 </a>
                             </li>
                             <li>

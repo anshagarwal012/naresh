@@ -1,0 +1,50 @@
+[18-Feb-2023 21:31:37 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:31:52 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:32:57 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:33:15 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:33:22 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:33:25 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:33:32 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:33:34 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:33:54 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:34:02 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:34:10 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:34:13 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[18-Feb-2023 21:34:20 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:14:38 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:14:55 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:16:19 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:16:42 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:16:45 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:16:49 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:16:50 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[20-Feb-2023 17:16:54 Asia/Kolkata] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:100337 Library:30120 in /home/oliveven/public_html/admin/db.php on line 10
+[24-Feb-2023 05:46:49 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[24-Feb-2023 07:21:11 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[24-Feb-2023 07:21:18 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[24-Feb-2023 15:35:06 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[24-Feb-2023 15:35:16 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[24-Feb-2023 15:35:50 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:42:04 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:42:40 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:42:49 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:00 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:00 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:08 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:22 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:22 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:44 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:58 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:43:58 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:44:07 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:44:14 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:44:14 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:45:08 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 12:45:17 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 15:43:01 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 15:43:41 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 15:43:41 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 15:45:22 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 15:45:32 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 15:46:16 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[25-Feb-2023 16:15:58 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7

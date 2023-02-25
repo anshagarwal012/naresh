@@ -7,6 +7,7 @@
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white text-left">
+          <h1 class="d-none">Olive Venture Partners. Olive Venture Partners (OVP) is an angel investor group that focuses on early-stage tech startups that have high growth potential.</h1>
         <h2 class="text-white"><span class="heade-h2"></span><span class="input-cursor"></span></h2>
       </div>
     </div>

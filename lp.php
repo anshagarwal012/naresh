@@ -1,5 +1,5 @@
 <?php
-$heading = "Apply For Membership";
+$heading = "Become An Lp";
 require('header.php');
 if (isset($_POST) && !empty($_POST)) {
     $name = $_POST['name'];

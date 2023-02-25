@@ -6,7 +6,7 @@
                 <div class="col-md-5">
                     <div class="footer-logo">
                         <a href="/">
-                            <img src="assets/svg/logo.svg" alt="">
+                            <img src="assets/svg/logo.svg" alt="Olive Venture Partners Logo">
                         </a>
                     </div>
                 </div>
@@ -40,15 +40,15 @@
 </div><!-- /End Main Site -->
 <!-- Js File-->
 <script src="assets/js/jquery.v3.4.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/scrollIt.min.js"></script>
-<script src="assets/js/jquery.slicknav.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/typewriter.js"></script>
 <script src="assets/js/nav.js"></script>
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!--<script src="assets/js/jquery.slicknav.min.js"></script>-->
+<!--<script src="assets/js/owl.carousel.min.js"></script>-->
+<!--<script src="assets/js/isotope.pkgd.min.js"></script>-->
+<!--<script src="assets/js/plugins.js"></script>-->
 </body>
 
 </html>

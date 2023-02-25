@@ -13,21 +13,30 @@ require('admin/db.php');
     <meta name="keywords" content="Olive, Venture Partners, OVP, Naresh, Olive Venture Partners">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+    <meta http-equiv = "content-language" content = "en">
     <meta name="author" content="Naresh Kumar">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:title" content="Olive Ventures Partners (OVP)">
+    <meta name="twitter:description" content="Olive Venture Partners. Olive Venture Partners (OVP) is an angel investor group that focuses on early-stage tech startups that have high growth potential.">
+    <meta name="twitter:url" content="https://oliveventurepartners.in/assets/svg/logo.svg">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Olive Ventures Partners (OVP)">
+    <meta property="og:description" content="Olive Venture Partners. Olive Venture Partners (OVP) is an angel investor group that focuses on early-stage tech startups that have high growth potential.">
+    <meta property="og:image" content="https://oliveventurepartners.in/assets/svg/logo.svg">
+    <meta property="og:url" content="https://oliveventurepartners.in/">
+
+
     <!-- Page Title -->
     <title>Olive Venture Partners - <?= $heading ?></title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!--<link rel="stylesheet" href="assets/css/animate.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/slicknav.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/owl.carousel.min.css">-->
+    <!--<link rel="stylesheet" href="assets/fonts/flaticon.css">-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/nav.css">
@@ -84,7 +93,8 @@ require('admin/db.php');
                     <div class="col-md-2 my-auto">
                         <div class="logo">
                             <a href="/">
-                                <img src="assets/svg/logo.svg" alt="">
+                                <img src="assets/svg/logo.svg" alt="Olive Venture Partners Logo">
+                                <h2 class="d-none">Olive Venture Partners</h2>
                             </a>
                         </div>
                     </div>
