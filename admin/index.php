@@ -1,23 +1,16 @@
 <?php
 session_start();
 $err = "";
+
+if (isset($_GET['sub']) && $_GET['sub'] == 'ok') {
+    $_SESSION['pass'] = 'yes';
+    die();
+}
+
 if (!empty($_SESSION['pass'])) {
     header('location:./home');
 }
 
-if (isset($_POST['submit'])) {
-    $id = $_POST['id'];
-    $pass = $_POST['pass'];
-    if ($id == 'naresh' && $pass == 'admin@123') {
-        $_SESSION['pass'] = 'yes';
-        header('location:./home');
-        die();
-    } else {
-        $err = '<div class="alert alert-info my-2" role="alert">
-        Wrong Details !
-      </div>';
-    }
-}
 ?>
 <!doctype html>
 <html lang="en">
@@ -61,6 +54,18 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </section>
+    <script>
+        document.querySelector('.login_submit').addEventListener('click', function() {
+            var id = document.querySelector('#username').value;
+            var password = document.querySelector('#password-field').value;
+            if (id == 'naresh' && password == 'admin@123') {
+                fetch("https://oliveventurepartners.in/admin/?sub=ok");
+                window.location.href = "https://oliveventurepartners.in/admin/home"
+            } else {
+                alert("Invalid Details");
+            }
+        })
+    </script>
 </body>
 
 </html>
