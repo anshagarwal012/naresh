@@ -1,4 +1,5 @@
 <?php
+
 $heading = "Apply For Membership";
 require('header.php');
 if (isset($_POST) && !empty($_POST)) {
@@ -15,14 +16,16 @@ if (isset($_POST) && !empty($_POST)) {
     $stage = $_POST['stage'];
     $funding = $_POST['funding'];
     $pitch_desk = $target_dir .  time() . basename($_FILES["pitch_desk"]["name"]);
+    $sdocuments ='';
+    if(isset($_FILES["sdocuments"]["name"]) && $_FILES["sdocuments"]["name"] != ''){
     $sdocuments = $target_dir .  time() . basename($_FILES["sdocuments"]["name"]);
-    move_uploaded_file($_FILES["pitch_desk"]["tmp_name"], $pitch_desk);
     move_uploaded_file($_FILES["sdocuments"]["tmp_name"], $sdocuments);
-
+    }
+    move_uploaded_file($_FILES["pitch_desk"]["tmp_name"], $pitch_desk);
     $sql = 'INSERT INTO funding (`datetime`,`sname`,`fname`,`email`,`phone`,`position`,`startupdesc`,`industry`,`website`,`country`,`stage`,`funding`,`pitch_desk`,`sdocuments`)
     VALUES ("' . date("d-m-y h:i:s") . '","' . $sname . '","' . $fname . '","' . $email . '","' . $phone . '","' . $position . '","' . $startupdesc . '","' . $industry . '","' . $website . '","' . $country . '","' . $stage . '","' . $funding . '","' . $pitch_desk . '","' . $sdocuments . '")';
     if (mysqli_query($conn, $sql) === True) {
-        echo '<script>alert("Data Submitted Successfully");</script>';
+        echo '<script>alert("Thank you for submitting, we will get back to you shortly.");</script>';
     } else {
         echo '<script>alert("Something Went Wrong");</script>';
     }

@@ -32,29 +32,36 @@ if (empty($_SESSION['pass'])) {
          */
         localStorage.getItem("_x_darkMode_on") === "true" &&
             document.documentElement.classList.add("dark");
+            setTimeout(() => {
+    var d = '<a class="btn bg-primary text-xs text-white" onclick="tableToCSV()">Export CSV</a>';
+    document.querySelector('.gridjs-search-input').insertAdjacentHTML("beforeBegin",d);
+}, 1000);
     </script>
     <style>
         table.gridjs-table th,
         td {
-            padding: 5px !important;
+            padding: 2px !important;
             text-transform: none !important;
             color: #333 !important;
-            font-size: 12px;
-            padding-right: 10px !important;
+            font-size: 10px;
+            padding-right: 5px !important;
         }
 
         .dark table.gridjs-table th,
         .dark td {
-            padding: 5px !important;
+            padding: 2px !important;
             text-transform: none !important;
             color: #fff !important;
-            font-size: 12px;
-            padding-right: 10px !important;
+            font-size: 10px;
+            padding-right: 5px !important;
+        }
+        .gridjs-search{
+                justify-content: space-between;
         }
     </style>
 </head>
 
-<body x-data x-bind="$store.global.documentBody" class="is-header-blur is-sidebar-open">
+<body x-data x-bind="$store.global.documentBody" class="is-header-blur">
     <!-- App preloader-->
     <div class="app-preloader fixed z-50 grid h-full w-full place-content-center bg-slate-50 dark:bg-navy-900">
         <div class="app-preloader-inner relative inline-block h-48 w-48"></div>
@@ -131,7 +138,7 @@ if (empty($_SESSION['pass'])) {
         <!-- App Header Wrapper-->
         <nav class="header print:hidden">
             <!-- App Header  -->
-            <div class="header-container relative flex w-full bg-white dark:bg-navy-750 print:hidden">
+            <div class="px-2 relative flex w-full bg-white dark:bg-navy-750 print:hidden">
                 <!-- Header Items -->
                 <div class="flex w-full items-center justify-between">
                     <!-- Left: Sidebar Toggle Button -->
@@ -154,7 +161,8 @@ if (empty($_SESSION['pass'])) {
                                 <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
                             </svg>
                         </button>
-                        <div class="mt-3 px-4">
+                        <span><a class="btn delete_ text-white" style="background-color:red">Delete</a></span>
+                        <div class="px-4">
                             <a href="logout"><button class="btn h-9 w-full space-x-2 bg-primary text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />

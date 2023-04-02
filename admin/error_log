@@ -48,3 +48,113 @@
 [25-Feb-2023 15:45:32 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
 [25-Feb-2023 15:46:16 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
 [25-Feb-2023 16:15:58 UTC] PHP Warning:  Undefined array key "captcha" in /home/oliveven/public_html/admin/index.php on line 7
+[26-Mar-2023 17:14:39 Asia/Kolkata] PHP Warning:  Undefined variable $_SERER in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:14:39 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:15:27 Asia/Kolkata] PHP Warning:  Undefined variable $_SERER in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:15:27 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:15:50 Asia/Kolkata] PHP Warning:  Undefined variable $_SERER in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:15:50 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:16:30 Asia/Kolkata] PHP Warning:  Undefined variable $_SERER in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:16:30 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/oliveven/public_html/admin/delete.php on line 8
+[26-Mar-2023 17:16:55 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:16:55 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:16:57 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:16:57 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:17:17 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:17:17 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:17:18 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:17:18 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:17:59 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:17:59 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:00 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:00 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:01 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:01 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:01 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:01 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:01 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:01 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:23 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:23 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:24 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:24 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:25 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:25 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:25 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:25 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:25 Asia/Kolkata] PHP Warning:  Undefined variable $con in /home/oliveven/public_html/admin/delete.php on line 7
+[26-Mar-2023 17:18:25 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[28-Mar-2023 14:41:56 UTC] PHP Parse error:  syntax error, unexpected token ";" in /home/oliveven/public_html/admin/lp.php on line 90
+[28-Mar-2023 20:42:36 Asia/Kolkata] PHP Warning:  Undefined array key "ids" in /home/oliveven/public_html/admin/delete.php on line 4
+[28-Mar-2023 20:43:10 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '["39","38"])' at line 1 in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
+[28-Mar-2023 20:45:13 Asia/Kolkata] PHP Warning:  Array to string conversion in /home/oliveven/public_html/admin/delete.php on line 6
+[28-Mar-2023 20:45:13 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Array' in 'where clause' in /home/oliveven/public_html/admin/delete.php:8
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(8): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 8
+[28-Mar-2023 20:49:53 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'oliveven_ovp.contact' doesn't exist in /home/oliveven/public_html/admin/delete.php:7
+Stack trace:
+#0 /home/oliveven/public_html/admin/delete.php(7): mysqli_query()
+#1 {main}
+  thrown in /home/oliveven/public_html/admin/delete.php on line 7
