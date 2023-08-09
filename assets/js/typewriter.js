@@ -1,8 +1,8 @@
 const carouselText = [
-  { text: "Our vision is to assist New Age technology startups", color: "red" },
-  { text: "in building the next future.", color: "red" },
-  { text: "Our goal is to create value for our clients, and we", color: "red" },
-  { text: "operate with principles of excellence and trust.", color: "red" }
+  { text: "Our Vision is to assist New Age Technology Startups", color: "red" },
+  { text: "in building the Next Future.", color: "red" },
+  { text: "Our Goal is to create value for our clients, and we", color: "red" },
+  { text: "operate with Principles of Excellence and Trust.", color: "red" }
 ]
 $(document).ready(async function () {
   carousel(carouselText, ".heade-h2")

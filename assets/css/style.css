@@ -294,7 +294,7 @@ p {
 .heade-h2 {
   color: #ffffff;
   font-size: 40px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 60px;
   font-weight: 700;
 }
