@@ -21,7 +21,7 @@ require('header.php');
                             Fundraising Support</h4>
                         <hr class="w-25">
                         <p class="text-center value-text">
-                            Our fundraising support services aid startups in securing funding for their pre-seed and seed rounds. </p>
+                            Our fundraising support services aid startups in securing funding for their Seed to Series A rounds. </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xl-3  my-auto p-3">
