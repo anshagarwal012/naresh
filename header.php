@@ -13,7 +13,7 @@ require('admin/db.php');
     <meta name="keywords" content="Olive, Venture Partners, OVP, Naresh, Olive Venture Partners">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv = "content-language" content = "en">
+    <meta http-equiv="content-language" content="en">
     <meta name="author" content="Naresh Kumar">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="twitter:title" content="Olive Ventures Partners (OVP)">
@@ -43,11 +43,14 @@ require('admin/db.php');
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE4L1HWRDJ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-VE4L1HWRDJ');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VE4L1HWRDJ');
     </script>
 </head>
 
@@ -78,6 +81,7 @@ require('admin/db.php');
                                     <li class="js-menu-toggle"><a href="#"><i class="fa fa-arrow-right"></a></i></li>
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/whoweare">Who We Are</a></li>
+                                    <li><a href="/portfolio">Portfolio</a></li>
                                     <li><a href="/team">Team</a></li>
                                     <li><a href="/services">Services</a></li>
                                     <li><a href="/contact">Contact Us</a></li>
@@ -103,6 +107,7 @@ require('admin/db.php');
                             <ul class="d-flex justify-content-between align-items-center">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/whoweare">Who We Are</a></li>
+                                <li><a href="/portfolio">Portfolio</a></li>
                                 <li><a href="/team">Team</a></li>
                                 <li><a href="/services">Services</a></li>
                                 <li><a href="/contact">Contact Us</a></li>

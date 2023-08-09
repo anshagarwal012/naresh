@@ -1,10 +1,11 @@
 <?php
+ini_set('session.save_path', realpath(dirname($_SERVER['DOCUMENT_ROOT']) . '/../session'));
 session_start();
 date_default_timezone_set('Asia/Kolkata');
 $servername = "localhost";
-$username = "oliveven_ovp";
+$username = "u338280037_olive";
 $password = "Olive@1234";
-$database = "oliveven_ovp";
+$database = "u338280037_olive";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);

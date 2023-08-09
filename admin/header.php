@@ -32,10 +32,10 @@ if (empty($_SESSION['pass'])) {
          */
         localStorage.getItem("_x_darkMode_on") === "true" &&
             document.documentElement.classList.add("dark");
-            setTimeout(() => {
-    var d = '<a class="btn bg-primary text-xs text-white" onclick="tableToCSV()">Export CSV</a>';
-    document.querySelector('.gridjs-search-input').insertAdjacentHTML("beforeBegin",d);
-}, 1000);
+        setTimeout(() => {
+            var d = '<a class="btn bg-primary text-xs text-white" onclick="tableToCSV()">Export CSV</a>';
+            document.querySelector('.gridjs-search-input').insertAdjacentHTML("beforeBegin", d);
+        }, 1000);
     </script>
     <style>
         table.gridjs-table th,
@@ -55,8 +55,9 @@ if (empty($_SESSION['pass'])) {
             font-size: 10px;
             padding-right: 5px !important;
         }
-        .gridjs-search{
-                justify-content: space-between;
+
+        .gridjs-search {
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -127,6 +128,11 @@ if (empty($_SESSION['pass'])) {
                             <li>
                                 <a x-data="navLink" href="contact" :class="isActive ? 'font-medium text-primary dark:text-accent-light' : 'text-slate-600 hover:text-slate-900 dark:text-navy-200 dark:hover:text-navy-50'" class="flex py-2 text-xs+ tracking-wide outline-none transition-colors duration-300 ease-in-out">
                                     Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a x-data="navLink" href="portfolio" :class="isActive ? 'font-medium text-primary dark:text-accent-light' : 'text-slate-600 hover:text-slate-900 dark:text-navy-200 dark:hover:text-navy-50'" class="flex py-2 text-xs+ tracking-wide outline-none transition-colors duration-300 ease-in-out">
+                                    Portfolio
                                 </a>
                             </li>
                         </ul>

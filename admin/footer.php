@@ -20,8 +20,8 @@ https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js
         }
         data.unshift(row);
         for (let j = 0; j < data.length; j++) {
-            var da = data[j].map(e=>{
-               return '"'+ e + '"';
+            var da = data[j].map(e => {
+                return '"' + e + '"';
             })
             csv_data.push(da.join(','));
         }
@@ -42,29 +42,30 @@ https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js
         document.body.removeChild(temp_link);
     }
     da = [];
-    $('.delete_').on('click',function(){
-        $('input.multi_select:checked').each(function(e){
-        da.push($(this).val())
+    $('.delete_').on('click', function() {
+        $('input.multi_select:checked').each(function(e) {
+            da.push($(this).val())
         })
-        if(da.length == 0){
+        if (da.length == 0) {
             alert("Please Select At Least One");
-        }else{
+        } else {
             var table = '';
-            if(window.location.pathname.includes('/home')){
+            if (window.location.pathname.includes('/home')) {
                 table = 'funding';
-            }else if(window.location.pathname.includes('/lp')){
+            } else if (window.location.pathname.includes('/portfolio')) {
+                table = 'portfolio';
+            } else if (window.location.pathname.includes('/lp')) {
                 table = 'lp';
-            }else{
+            } else {
                 table = "contacts";
             }
-            var url = window.location.origin+"/admin/delete.php?table="+table+"&id=";
-           var l = confirm("Are You Sure You Want To Delete This ?")
-           if(l){
-               window.location.href = url+JSON.stringify(da);
-           }
+            var url = window.location.origin + "/admin/delete.php?table=" + table + "&id=";
+            var l = confirm("Are You Sure You Want To Delete This ?")
+            if (l) {
+                window.location.href = url + JSON.stringify(da);
+            }
         }
     })
-
 </script>
 </body>
 
