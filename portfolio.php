@@ -34,8 +34,8 @@ require('header.php');
 </style>
 <div class="team-area bg-light">
     <div class="container section-padding">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
+        <div class="row justify-content-center">
+            <div class="col-md-9">
                 <div class="section-title text-center p-0">
                     <div class="head p-2">
                         <h3 class="pt-3">Portfolio <span>Companies</span></h3>
