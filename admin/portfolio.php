@@ -9,6 +9,7 @@ $allowedExtensions = ["jpg", "jpeg", "png"];
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (isset($_FILES["file"])) {
         $file = $_FILES["file"];
+        $cat = $_POST["cat"];
 
         $filename = time() . basename($file["name"]);
         $fileExtension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $uploadPath = $targetDirectory . $filename;
 
             if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
-                $query = "INSERT INTO portfolio (filename) VALUES ('$filename')";
+                $query = "INSERT INTO portfolio (filename, cat) VALUES ('$filename', '$cat')";
                 if (mysqli_query($conn, $query)) {
 ?>
                     <script>
@@ -54,6 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <h2 class="text-2xl font-bold mb-4">Upload an Image</h2>
         <form action="" method="POST" enctype="multipart/form-data" class="flex items-center">
             <input type="file" name="file" accept="image/*" required class="flex-grow mr-2 py-2 px-4 border rounded-lg">
+            <select name="cat" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mr-3">
+                <option value="EV Mobility">EV Mobility</option>
+                <option value="Enterprise IT">Enterprise IT</option>
+                <option value="EdTech">EdTech</option>
+                <option value="Fintech">Fintech</option>
+                <option value="D2C">D2C</option>
+                <option value="Deep Tech">Deep Tech</option>
+            </select>
             <button type="submit" class="btn bg-primary text-white hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Upload</button>
         </form>
         <!-- From HTML Table -->
@@ -80,6 +89,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
                                         Image
+                                    </th>
+                                    <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
+                                        Sector
                                     </th>
                                     <th class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
                                         Date Time
@@ -110,6 +122,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                                 </td>
                                                 <td class="whitespace-nowrap px-4 py-3 sm:px-5">
                                                     <img width="200px" src="<?= $protocol . $_SERVER['HTTP_HOST'] . '/admin/pf/' . $row['filename'] ?>" alt="">
+                                                </td>
+                                                <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                                                    <?= $row['cat'] ?>
                                                 </td>
                                                 <td class="whitespace-nowrap px-4 py-3 sm:px-5">
                                                     <?= $row['uploaded_at'] ?>

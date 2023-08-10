@@ -31,6 +31,11 @@ require('header.php');
         color: #212121;
         text-decoration: none;
     }
+
+    a.portfolio-card-link.w-inline-block .list {
+        position: absolute;
+        bottom: 0;
+    }
 </style>
 <div class="team-area bg-light">
     <div class="container section-padding">
@@ -46,7 +51,7 @@ require('header.php');
         </div>
         <div class="row justify-content-center">
             <?php
-            $sql = "SELECT filename FROM portfolio order by id desc";
+            $sql = "SELECT filename, cat FROM portfolio order by id desc";
             $result = mysqli_query($conn, $sql);
             $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
             if ($result) {
@@ -55,6 +60,7 @@ require('header.php');
                         <div class="col-md-3 p-0">
                             <div class="portfolio-card w-dyn-item">
                                 <a style="background-image:url(&quot;<?= $protocol . $_SERVER['HTTP_HOST'] . '/admin/pf/' . $row['filename'] ?>&quot;)" href="javascript:void(0)" class="portfolio-card-link w-inline-block">
+                                    <p class="list"><?php echo $row['cat'] ?></p>
                                 </a>
                             </div>
                         </div>
